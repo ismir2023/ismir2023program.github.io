@@ -1,0 +1,78 @@
+.navbar {
+  background-color: white;
+  font-family: Ambiant;
+}
+
+.navbar > .container {
+  /* background-color: red; */
+  margin-top: 0;
+}
+
+.tui-full-calendar-time-schedule-content, .tui-full-calendar-time-schedule-content-time {
+  border-color: lightgrey !important;
+  font-weight: 400;
+  color: white;
+}
+
+
+strong {
+  font-weight: 900;
+  /* font-size: 0.8rem; */
+}
+
+.day-title {
+  overflow: hidden;
+}
+
+.day-section {
+  margin-bottom: 30px;
+}
+
+.day-title::after {
+  content:'';
+  display:inline-block;
+  width:100%; height:100%;
+  margin-right:-100%;
+  border-bottom: 3px solid #000;
+  transform: translateY(-8px);
+  margin-left: 15px;
+}
+
+/* tut: '#A79B8E'
+all: '#D50201'
+pos: '#F6BF25'
+meet: '#B39DDB'
+wimir: '#8F24AA'
+meet-spec: '#34B579'
+mus: '#3F51B5'
+master: '#BFCB33'
+sat: '#A79B8E' */
+
+#all::after {
+  border-color: #D50201;
+}
+#all_b::after {
+  border-color: #D50201;
+}
+#meet-spec::after {
+  border-color: #34B579;
+}
+#wimir::after {
+  border-color: #8F24AA;
+}
+#pos::after {
+  border-color: #F6BF25;
+}
+#mus::after {
+  border-color: #3F51B5;
+}
+#master::after {
+  border-color: #BFCB33;
+}
+
+.full-card-link {
+  color: inherit;
+}
+.full-card-link:hover {
+  color: inherit;
+}

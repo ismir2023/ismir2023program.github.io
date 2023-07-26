@@ -1,0 +1,802 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/ismir_tab_icon.png">
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/custom.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+    <link rel="stylesheet" href="static/css/poster.css" />
+    <link rel="stylesheet" href="static/css/music.css" />
+    <link rel="stylesheet" href="static/css/piece.css" />
+
+
+    <!-- <link rel="stylesheet" href="https://gitcdn.xyz/repo/wingkwong/jquery-chameleon/master/src/chameleon.min.css"> -->
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+    <!-- <script src="static/js/chameleon.js"></script> -->
+
+
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+      href="static/css/Lato.css"
+      rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet" />
+    <link
+      href="static/css/Cuprum.css"
+      rel="stylesheet"
+    />
+    <link
+      href="static/css/Ambiant.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="static/css/chameleon.css" rel="stylesheet"/> -->
+    <title>ISMIR 2023: Day 3</title>
+    
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <!--
+
+    ('tutorials.html', 'Tutorials'),
+    ('index.html, 'Home'),
+    ('special_meetings.html', 'Special Meetings'),
+    -->
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="https://ismir2023.ismir.net">
+          <img
+             class="logo" src="static/images/ismir_tabicon.png"
+             height="auto"
+             width="300px"
+          />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">ISMIR 2023</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="calendar.html">Schedule</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="music.html">Music</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="lbds.html">LBDs</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="industry.html?session=Platinum">Industry</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="jobs.html">Jobs</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+        
+<ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a
+      id="calendar-html"
+      class="nav-link text-muted"
+      href="calendar.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Calendar
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="tutorials-html"
+      class="nav-link text-muted"
+      href="tutorials.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-4
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_2-html"
+      class="nav-link text-muted"
+      href="day_2.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-5
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_3-html"
+      class="nav-link text-muted"
+      href="day_3.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-6
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_4-html"
+      class="nav-link text-muted"
+      href="day_4.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-7
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_5-html"
+      class="nav-link text-muted"
+      href="day_5.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-8
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<!---->
+<!--  -->
+<!--localcheck: Europe/London-->
+<!---->
+<!--finalchosen: Europe/London-->
+
+<div id="day">
+
+  
+
+  
+
+  
+  <h2 class="day-title" id=all>Keynote Speaker</h2>
+  
+
+<div class="row p-4">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-2 col-sm-5">
+            <img src="static/images/speakers/TMKrishna.jpeg" width="100%" class="img-thumbnail" />
+          </div>
+          <div class="col-md-10 col-sm-6">
+            <div class="m-3 text-muted">
+              <h3>
+                <a href="https://www.tmkrishna.com/" class="main-title">
+                  Keynote-1: TM Krishna on &#34;Evolution of Performance and Aesthetics in Indian Art Music&#34;
+                </a>
+              </h3>
+            </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                TM Krishna  /  Karnatik Musician, Author &amp; Activist
+              </span>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+              2022-12-06 | 09:00 (Asia/Calcutta)
+            </div>
+
+            <div class="m-3 text-center">
+            
+              <a href="https://ismir2022program.slack.com/archives/C04CM3T0YQ3" class="btn btn-primary mr-3"><svg style="display: inline-block; width: 23px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="75 75 150 150" style="enable-background:new 0 0 270 270;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M99.4,151.2c0,7.1-5.8,12.9-12.9,12.9s-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h12.9V151.2z"/>
+		<path class="st0" d="M105.9,151.2c0-7.1,5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v32.3c0,7.1-5.8,12.9-12.9,12.9
+			s-12.9-5.8-12.9-12.9C105.9,183.5,105.9,151.2,105.9,151.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M118.8,99.4c-7.1,0-12.9-5.8-12.9-12.9s5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v12.9H118.8z"/>
+		<path class="st0" d="M118.8,105.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9H86.5c-7.1,0-12.9-5.8-12.9-12.9
+			s5.8-12.9,12.9-12.9C86.5,105.9,118.8,105.9,118.8,105.9z"/>
+	</g>
+	<g>
+		<path class="st0" d="M170.6,118.8c0-7.1,5.8-12.9,12.9-12.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9h-12.9V118.8z"/>
+		<path class="st0" d="M164.1,118.8c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9V86.5c0-7.1,5.8-12.9,12.9-12.9
+			c7.1,0,12.9,5.8,12.9,12.9V118.8z"/>
+	</g>
+	<g>
+		<path class="st0" d="M151.2,170.6c7.1,0,12.9,5.8,12.9,12.9c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9v-12.9H151.2z"/>
+		<path class="st0" d="M151.2,164.1c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h32.3c7.1,0,12.9,5.8,12.9,12.9
+			c0,7.1-5.8,12.9-12.9,12.9H151.2z"/>
+	</g>
+</g>
+</svg> keynote-tmk</a>
+            
+            </div>
+
+
+            <div class="m-3">
+              Indian art music continues to evolve in current performance practice, while staying within the framework provided by some of the immutable axiomatic concepts that define the music culture. The changes that lead the evolution of the music culture are guided by practitioners and influenced by the evolving socio-cultural, socio-political or performance and aesthetic considerations. In this talk, we focus on the evolution of Indian art music from the perspective of performance and aesthetics, highlighting some important milestones around the melodic and rhythmic systems in Indian art music. Focusing on recent developments and our own influences on performance practice and aesthetics, we discuss our effort and approaches to create more inclusive roles in music composition and performance. We further aim to provide concrete examples and formulations of the abstractions in current performance and aesthetics. We propose thoughts and ideas that can help current MIR formulations and solutions to go beyond the limiting assumptions based on current music performance practices and (often rigid) structures, and focus on the music abstractions that are more fundamental to our understanding, appreciation and analysis of Indian art music.
+            </div>
+            <div class="ml-3 mr-3 mt-4 mb-3 h5">
+              Bio
+            </div>
+
+            <div class="m-3">
+              TM Krishna, is one of the pre-eminent vocalists in the rigorous Karnatik tradition of India's classical music. As a public intellectual, Krishna speaks and writes about issues affecting the human condition and about matters cultural. As a vocalist, he has made path-breaking innovations in both the style and substance of his concerts. His award-winning book, A Southern Music – The Karnatik Story, published by Harper Collins in 2013 was a first-of-its-kind philosophical, aesthetic and socio-political exploration of Karnatik music. TM Krishna has partnered with individuals and collectives working at the intersections of social change, a new politics for contemporary India, a fresh new imagining of the wider universe of the Arts. In 2016, TM Krishna received the prestigious Ramon Magsaysay Award in recognition of "his forceful commitment as artist and advocate to art’s power to heal India’s deep social divisions".
+            </div>
+
+
+<!--            <div class="ml-3 mr-3 mt-4 mb-3 h5 text-muted">-->
+<!--              Zoom links will be shared on Slack.-->
+<!--            </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+    <h2 class="day-title" id=pos>Poster Sessions</h2>
+    <div class="cards row p-4">
+  
+  
+  
+    
+  
+    
+  
+  
+    
+  
+    
+  
+
+  
+<!--    <div class="col-md-6 col-sm-12 p-3" style="box-sizing: border-box;">-->
+        <div class="col-12 p-3" style="box-sizing: border-box;">
+      
+
+      
+      
+
+
+
+      
+      
+
+      <a class="full-card-link" href="papers.html?session=3">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+          <div
+            class="card-header text-center"
+            style="width: 100%;"
+          >
+          
+            
+            <h3 class="m-3 card-title main-title text-left">
+              Paper Session - 3 (Special Call)
+            </h3>
+            <div class="m-3 text-left card-subtitle text-muted">
+              <p>Session Chair: Rafael Caro Repetto (University of Music and Performing Arts Graz)</p>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+              2022-12-06 | 10:00 (Asia/Calcutta)
+            </div>
+
+            <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+              <p>Browse the active poster session's channels, joining calls to ask questions and discuss research with presenters, and leave comments in the channel for asynchronous chatting later.</p>
+<ul>
+<li><b>P3-01*: Raga Classification From Vocal Performances Using Multimodal Analysis</b><br>Martin Clayton, Preeti Rao, Nithya Nadig Shikarpur, Sujoy Roychowdhury, Jin Li</li>
+<li><b>P3-02*: Traces of Globalization in Online Music Consumption Patterns and Results of Recommendation Algorithms</b><br>Oleg Lesota, Emilia Parada-Cabaleiro, Elisabeth Lex, Navid Rekabsaz, Stefan Brandl, Markus Schedl</li>
+<li><b>P3-03: Network Analyses for Cross-Cultural Music Popularity</b><br>Kongmeng Liew, Vipul Mishra, Yangyang Zhou, Elena V. Epure, Romain Hennequin, Shoko Wakamiya, Eiji Aramaki</li>
+<li><b>P3-04: Three related corpora in Middle Byzantine music notation and a preliminary comparative analysis</b><br>Polykarpos Polykarpidis, Dionysios Kalofonos, Dimitrios Balageorgos, Christina Anagnostopoulou</li>
+<li><b>P3-05: Playing Technique Detection by Fusing Note Onset Information in Guzheng Performance</b><br>Dichucheng Li, Yulun Wu, Qinyu Li, Jiahao Zhao, Yi Yu, Fan Xia, Wei Li</li>
+<li><b>P3-06: KDC: an open corpus for computational research of dastgāhi music</b><br>Babak Nikzat, Rafael Caro Repetto</li>
+<li><b>P3-07: Inaccurate Prediction or Genre Evolution? Rethinking Genre Classification</b><br>Ke Nie</li>
+<li><b>P3-08: In Search of Sañcāras: Tradition-informed Repeated Melodic Pattern Recognition in Carnatic Music</b><br>Thomas Nuttall, Genís Plaja-Roglans, Lara Pearson, Xavier Serra</li>
+<li><b>P3-09: Automatic Chinese National Pentatonic Modes Recognition Using Convolutional Neural Network</b><br>Zhaowen Wang, Mingjin Che, Yue Yang, Wen Wu Meng, Qinyu Li, Fan Xia, Wei Li</li>
+<li><b>P3-10: Teach Yourself Georgian Folk Songs Dataset: A Annotated Corpus Of Traditional Vocal Polyphony</b><br>David Gillman, Atalay Kutlay, Uday Goyat</li>
+<li><b>P3-11: Adapting meter tracking models to Latin American music</b><br>Lucas S Maia, Martín Rocamora, Luiz W P Biscainho, Magdalena Fuentes</li>
+<li><b>P3-12: Critiquing Task- versus Goal-oriented Approaches: A Case for Makam Recognition</b><br>Kaustuv Kanti Ganguli, Sertan Şentürk, Carlos Guedes</li>
+<li><b>P3-13: A Dataset for Greek Traditional and Folk Music: Lyra</b><br>Charilaos Papaioannou, Ioannis Valiantzas, Theodore Giannakopoulos, Maximos Kaliakatsos-Papakostas, Alexandros Potamianos</li>
+<li><b>P3-14: Analysis and detection of singing techniques in repertoires of J-POP solo singers</b><br>Yuya Yamamoto, Juhan Nam, Hiroko Terasawa</li>
+</ul>
+<p>An asterisk (*) indicates long presentations (paper award candidates)</p>
+            </div>
+
+          
+          </div>
+        </div>
+      </a>
+    </div>
+  
+<!--    <div class="col-md-6 col-sm-12 p-3" style="box-sizing: border-box;">-->
+        <div class="col-12 p-3" style="box-sizing: border-box;">
+      
+
+      
+      
+
+
+
+      
+      
+
+      <a class="full-card-link" href="papers.html?session=4">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+          <div
+            class="card-header text-center"
+            style="width: 100%;"
+          >
+          
+            
+            <h3 class="m-3 card-title main-title text-left">
+              Paper Session - 4
+            </h3>
+            <div class="m-3 text-left card-subtitle text-muted">
+              <p>Session Chair: Vinoo Alluri (IIIT Hyderabad)</p>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+              2022-12-06 | 13:30 (Asia/Calcutta)
+            </div>
+
+            <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+              <p>Browse the active poster session's channels, joining calls to ask questions and discuss research with presenters, and leave comments in the channel for asynchronous chatting later.</p>
+<ul>
+<li><b>P4-01*: Performance MIDI-to-score conversion by neural beat tracking</b><br>Lele Liu, Qiuqiang Kong, Veronica Morfi, Emmanouil Benetos</li>
+<li><b>P4-02: Symbolic Music Loop Generation with Neural Discrete Representations</b><br>Sangjun Han, Hyeongrae Ihm, Moontae Lee, Woohyung Lim</li>
+<li><b>P4-03: Automatic music mixing with deep learning and out-of-domain data</b><br>Marco A Martinez Ramirez, Weihsiang Liao, Chihiro Nagashima, Giorgio Fabbro, Stefan Uhlich, Yuki Mitsufuji</li>
+<li><b>P4-04: Music-STAR: a Style Translation system for Audio-based Re-instrumentation</b><br>Mahshid Alinoori, Vassilios Tzerpos</li>
+<li><b>P4-05: Learning Unsupervised Hierarchies of Audio Concepts</b><br>Darius Afchar, Romain Hennequin, Vincent Guigue</li>
+<li><b>P4-06: Multi-objective Hyper-parameter Optimization of Behavioral Song Embeddings</b><br>Massimo Quadrana, Antoine Larreche-Mouly, Matthias Mauch</li>
+<li><b>P4-07: ATEPP: A Dataset of Automatically Transcribed Expressive Piano Performance</b><br>Huan Zhang, Jingjing Tang, Syed Rm Rafee, Simon Dixon, George Fazekas, Geraint A. Wiggins</li>
+<li><b>P4-08: PDAugment: Data Augmentation by Pitch and Duration Adjustments for Automatic Lyrics Transcription</b><br>Chen Zhang, Jiaxing Yu, Luchin Chang, Xu Tan, Jiawei Chen, Tao Qin, Kejun Zhang</li>
+<li><b>P4-09: Parameter Sensitivity of Deep-Feature based Evaluation Metrics for Audio Textures</b><br>Chitralekha Gupta, Yize Wei, Zequn Gong, Purnima Kamath, Zhuoyao Li, Lonce Wyse</li>
+<li><b>P4-10: Stability of Symbolic Feature Group Importance in the Context of Multi-Modal Music Classification</b><br>Igor Vatolkin, Cory Mckay</li>
+<li><b>P4-11: Multi-pitch Estimation meets Microphone Mismatch: Applicability of Domain Adaptation</b><br>Franca Bittner, Marcel Gonzalez, Maike L Richter, Hanna Lukashevich, Jakob Abeßer</li>
+<li><b>P4-12: Melody transcription via generative pre-training</b><br>Chris Donahue, John Thickstun, Percy Liang</li>
+<li><b>P4-13: Source Separation of Piano Concertos with Test-Time Adaptation</b><br>Yigitcan Özer, Meinard Müller</li>
+<li><b>P4-14: Counterpoint Error-Detection Tools for Optical Music Recognition of Renaissance Polyphonic Music</b><br>Martha E Thomae Elias, Julie Cumming, Ichiro Fujinaga</li>
+<li><b>P4-15: A Dataset of Symbolic Texture Annotations in Mozart Piano Sonatas</b><br>Louis Couturier, Louis Bigo, Florence Leve</li>
+<li><b>P4-16: Violin Etudes: A Comprehensive Dataset for f0 Estimation and Performance Analysis</b><br>Nazif Can Tamer, Pedro Ramoneda, Xavier Serra</li>
+<li><b>P4-17: Checklist Models for Improved Output Fluency in Piano Fingering Prediction</b><br>Nikita Srivatsan, Taylor Berg-Kirkpatrick</li>
+</ul>
+<p>An asterisk (*) indicates long presentations (paper award candidates)</p>
+            </div>
+
+          
+          </div>
+        </div>
+      </a>
+    </div>
+  
+</div>
+  
+
+  
+
+
+  
+    <h2 class="day-title" id=meet>Special Sessions</h2>
+    <div class="cards row p-4">
+  
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 200px; width: 100%;"
+      >
+        
+          <a id="Sp" href="https://ismir2022program.slack.com/archives/C04CPLHT8MA">
+            <h3 class="card-title main-title m-3 text-left">Special Session - 1: Enhancing music listening with MIR</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          <p>Moderator: Xavier Serra (Universitat Pompeu Fabra)</p>
+        </div>
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2022-12-06 | 16:00 (Asia/Calcutta)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--          <a href="https://ismir2022program.slack.com/archives/C04CPLHT8MA" class="btn btn-primary mr-3"><svg style="display: inline-block; width: 23px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="75 75 150 150" style="enable-background:new 0 0 270 270;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M99.4,151.2c0,7.1-5.8,12.9-12.9,12.9s-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h12.9V151.2z"/>
+		<path class="st0" d="M105.9,151.2c0-7.1,5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v32.3c0,7.1-5.8,12.9-12.9,12.9
+			s-12.9-5.8-12.9-12.9C105.9,183.5,105.9,151.2,105.9,151.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M118.8,99.4c-7.1,0-12.9-5.8-12.9-12.9s5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v12.9H118.8z"/>
+		<path class="st0" d="M118.8,105.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9H86.5c-7.1,0-12.9-5.8-12.9-12.9
+			s5.8-12.9,12.9-12.9C86.5,105.9,118.8,105.9,118.8,105.9z"/>
+	</g>
+	<g>
+		<path class="st0" d="M170.6,118.8c0-7.1,5.8-12.9,12.9-12.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9h-12.9V118.8z"/>
+		<path class="st0" d="M164.1,118.8c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9V86.5c0-7.1,5.8-12.9,12.9-12.9
+			c7.1,0,12.9,5.8,12.9,12.9V118.8z"/>
+	</g>
+	<g>
+		<path class="st0" d="M151.2,170.6c7.1,0,12.9,5.8,12.9,12.9c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9v-12.9H151.2z"/>
+		<path class="st0" d="M151.2,164.1c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h32.3c7.1,0,12.9,5.8,12.9,12.9
+			c0,7.1-5.8,12.9-12.9,12.9H151.2z"/>
+	</g>
+</g>
+</svg> special-sessions</a>-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          <p>In this panel we will discuss the research challenges and opportunities related to the development of new MIR technologies and services to support music listening.</p>
+<p>Panelists: Anna Gatzioura (Chordify), Fabien Gouyon (Pandora), Thomas Lidy (Utopia), Hugo Rodrigues (Moises.ai)</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+
+  
+
+  
+
+  
+    <h2 class="day-title" id=mus>Music Sessions</h2>
+    <div class="cards row p-4">
+  
+  
+  
+    
+  
+  
+    
+  
+
+  
+<!--    <div class="col-md-6 col-sm-12 p-3" style="box-sizing: border-box;">-->
+        <div class="col-12 p-3" style="box-sizing: border-box;">
+      
+
+      
+      
+
+
+
+      
+      
+
+      <a class="full-card-link" href="music.html?session=">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+          <div
+            class="card-header text-center"
+            style="width: 100%;"
+          >
+          
+            
+            <h3 class="m-3 card-title main-title text-left">
+              ISMIR Music Program
+            </h3>
+            <div class="m-3 text-left card-subtitle text-muted">
+              <p>Session Chair: Carlos Guedes (NYU Abu Dhabi)</p>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+              2022-12-06 | 17:00 (Asia/Calcutta)
+            </div>
+
+            <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+              <p>Hear ISMIR's music performances.</p>
+<ul>
+<li><b>M1: Hindustronic Live</b><br>Carlos Guedes</li>
+<li><b>M2: Conformity #16 for autonomous piano and large ensemble</b><br>Jason Palamara</li>
+<li><b>M3: ""Wings"", for Solo Clarinet and Automated Accompaniment Video Animation </b><br>Kaitlin Pet, Nikki Pet, Christopher Raphael</li>
+<li><b>M4: AI Phantasy</b><br>Panayiotis Kokoras</li>
+<li><b>M5: A song with yati Patterns- Visual representation through Kolam</b><br>Saroja TK, Sujatha TKL, Chandrakanth Mamillapalli</li>
+<li><b>M6: Fantastic AI Sinawi</b><br>Danbinaerin Han, Hannah Park, Chaeryeong Oh, Dasaem Jeong</li>
+<li><b>M7: Mukti - Kahan Re Aaya Tu (मुक्ति - कहाँ रे आया तू)</b><br>Jyoti Narang, Thomas Nuttall</li>
+<li><b>M8: The Oratory of Saint Philip Neri</b><br>Luke Dzwonczyk</li>
+<li><b>M9: Beatboxing with a homespun Sound box</b><br>Ranaprathap Ponnam</li>
+<li><b>M10: Confluence of Carnatic and Western Music using Grahabedha and Carnatic Gamakas</b><br>Tallapragada Shanmukha Sreevatsa, Suswara Pochampally</li>
+<li><b>M11: Recurrent Variations for String Orchestra</b><br>Hendrik Vincent Koops</li>
+<li><b>M12: 'b_dot_io': an Audio-Visual Miniature for Saxophone and Computer</b><br>Mark Hanslip</li>
+<li><b>M13: Bloom for cello and live electronics</b><br>Austin A Franklin</li>
+</ul>
+            </div>
+
+          
+          </div>
+        </div>
+      </a>
+    </div>
+  
+</div>
+  
+
+  
+    <h2 class="day-title" id=social>Social Events</h2>
+    <div class="cards row p-4">
+  
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 200px; width: 100%;"
+      >
+        
+          <a id="IS" href="https://ismir2022program.slack.com/archives/C04CM67BZUJ">
+            <h3 class="card-title main-title m-3 text-left">ISMIR Music Concert</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          <p>Hindustani vocals: Kaustuv Kanti Ganguli </p>
+<p>Carnatic vocals: Vignesh Ishwar </p>
+<p>Harmonium: Ravindra Katoti </p>
+<p>Carnatic violin: Sayee Rakshith </p>
+<p>Tabla: Tejovrush Joshi </p>
+<p>Mridangam: Sumesh Narayanan</p>
+        </div>
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2022-12-06 | 18:30 (Asia/Calcutta)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--          <a href="https://ismir2022program.slack.com/archives/C04CM67BZUJ" class="btn btn-primary mr-3"><svg style="display: inline-block; width: 23px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="75 75 150 150" style="enable-background:new 0 0 270 270;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M99.4,151.2c0,7.1-5.8,12.9-12.9,12.9s-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h12.9V151.2z"/>
+		<path class="st0" d="M105.9,151.2c0-7.1,5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v32.3c0,7.1-5.8,12.9-12.9,12.9
+			s-12.9-5.8-12.9-12.9C105.9,183.5,105.9,151.2,105.9,151.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M118.8,99.4c-7.1,0-12.9-5.8-12.9-12.9s5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v12.9H118.8z"/>
+		<path class="st0" d="M118.8,105.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9H86.5c-7.1,0-12.9-5.8-12.9-12.9
+			s5.8-12.9,12.9-12.9C86.5,105.9,118.8,105.9,118.8,105.9z"/>
+	</g>
+	<g>
+		<path class="st0" d="M170.6,118.8c0-7.1,5.8-12.9,12.9-12.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9h-12.9V118.8z"/>
+		<path class="st0" d="M164.1,118.8c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9V86.5c0-7.1,5.8-12.9,12.9-12.9
+			c7.1,0,12.9,5.8,12.9,12.9V118.8z"/>
+	</g>
+	<g>
+		<path class="st0" d="M151.2,170.6c7.1,0,12.9,5.8,12.9,12.9c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9v-12.9H151.2z"/>
+		<path class="st0" d="M151.2,164.1c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h32.3c7.1,0,12.9,5.8,12.9,12.9
+			c0,7.1-5.8,12.9-12.9,12.9H151.2z"/>
+	</g>
+</g>
+</svg> ismir-social</a>-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          <p>ISMIR 2022 Music Concert will feature a Jugalbandi vocal Indian art music concert by Kaustuv Kanti Ganguli and Vignesh Ishwar. The jugalbandi concert will aim to showcase the commonalities, differences and nuances of Hindustani and Carnatic music, the two predominant art music traditions of India. Kaustuv Kanti Ganguli will be accompanied by Ravindra Katoti on the harmonium and Tejovrush Joshi on the tabla. Vignesh Ishwar will be accompanied by Sayee Rakshith on the violin and Sumesh Narayanan on the mridangam. Kaustuv and Vignesh are seasoned professional musicians and MIR researchers who can bring their expertise and understanding to put together an enthralling performance interesting to the conference participants. A brief biography of the artists and additional details of the concert will be available soon.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+    <h2 class="day-title" id=vmeet>Virtual Special Sessions</h2>
+    <div class="cards row p-4">
+  
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 200px; width: 100%;"
+      >
+        
+          <a id="Sp" href="https://ismir2022program.slack.com/archives/C04CPLHT8MA">
+            <h3 class="card-title main-title m-3 text-left">Special Session B (Online): PhD in MIR - Challenges and Opportunities</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          <p>Moderator: Meinard Müller (International Audio Laboratories Erlangen)</p>
+        </div>
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2022-12-06 | 22:00 (Asia/Calcutta)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--          <a href="https://ismir2022program.slack.com/archives/C04CPLHT8MA" class="btn btn-primary mr-3"><svg style="display: inline-block; width: 23px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="75 75 150 150" style="enable-background:new 0 0 270 270;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M99.4,151.2c0,7.1-5.8,12.9-12.9,12.9s-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h12.9V151.2z"/>
+		<path class="st0" d="M105.9,151.2c0-7.1,5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v32.3c0,7.1-5.8,12.9-12.9,12.9
+			s-12.9-5.8-12.9-12.9C105.9,183.5,105.9,151.2,105.9,151.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M118.8,99.4c-7.1,0-12.9-5.8-12.9-12.9s5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v12.9H118.8z"/>
+		<path class="st0" d="M118.8,105.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9H86.5c-7.1,0-12.9-5.8-12.9-12.9
+			s5.8-12.9,12.9-12.9C86.5,105.9,118.8,105.9,118.8,105.9z"/>
+	</g>
+	<g>
+		<path class="st0" d="M170.6,118.8c0-7.1,5.8-12.9,12.9-12.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9h-12.9V118.8z"/>
+		<path class="st0" d="M164.1,118.8c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9V86.5c0-7.1,5.8-12.9,12.9-12.9
+			c7.1,0,12.9,5.8,12.9,12.9V118.8z"/>
+	</g>
+	<g>
+		<path class="st0" d="M151.2,170.6c7.1,0,12.9,5.8,12.9,12.9c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9v-12.9H151.2z"/>
+		<path class="st0" d="M151.2,164.1c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h32.3c7.1,0,12.9,5.8,12.9,12.9
+			c0,7.1-5.8,12.9-12.9,12.9H151.2z"/>
+	</g>
+</g>
+</svg> special-sessions</a>-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          <p>Music information retrieval (MIR) is an exciting research field related to different disciplines, including signal processing, machine learning, information retrieval, psychology, musicology, and the digital humanities. This diversity opens up many opportunities for challenging, interdisciplinary, and fascinating research projects at the intersection of engineering and humanities. However, younger researchers can also feel overwhelmed by the variety and complexity of MIR research questions. In this session, we will have an informal exchange of ideas and experiences, inviting doctoral candidates and more experienced MIR researchers. Responding to questions from the audience, we hope this interactive session will be helpful for current PhD students and students considering a PhD in MIR.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+</div>
+
+<script src="static/js/schedule_nav.js"></script>
+<script src="static/js/anchor_offset.js"></script>
+
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2023 ISMIR Organization Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>

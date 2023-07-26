@@ -1,0 +1,558 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/ismir_tab_icon.png">
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/custom.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+    <link rel="stylesheet" href="static/css/poster.css" />
+    <link rel="stylesheet" href="static/css/music.css" />
+    <link rel="stylesheet" href="static/css/piece.css" />
+
+
+    <!-- <link rel="stylesheet" href="https://gitcdn.xyz/repo/wingkwong/jquery-chameleon/master/src/chameleon.min.css"> -->
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+    <!-- <script src="static/js/chameleon.js"></script> -->
+
+
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+      href="static/css/Lato.css"
+      rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet" />
+    <link
+      href="static/css/Cuprum.css"
+      rel="stylesheet"
+    />
+    <link
+      href="static/css/Ambiant.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="static/css/chameleon.css" rel="stylesheet"/> -->
+    <title>ISMIR 2023: Day 5</title>
+    
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <!--
+
+    ('tutorials.html', 'Tutorials'),
+    ('index.html, 'Home'),
+    ('special_meetings.html', 'Special Meetings'),
+    -->
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="https://ismir2023.ismir.net">
+          <img
+             class="logo" src="static/images/ismir_tabicon.png"
+             height="auto"
+             width="300px"
+          />
+        </a>
+        
+        <a class="navbar-brand" href="index.html">ISMIR 2023</a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="calendar.html">Schedule</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="music.html">Music</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="lbds.html">LBDs</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="industry.html?session=Platinum">Industry</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="jobs.html">Jobs</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+        
+<ul class="nav nav-pills justify-content-center">
+  
+  <li class="nav-item">
+    <a
+      id="calendar-html"
+      class="nav-link text-muted"
+      href="calendar.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Calendar
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="tutorials-html"
+      class="nav-link text-muted"
+      href="tutorials.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-4
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_2-html"
+      class="nav-link text-muted"
+      href="day_2.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-5
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_3-html"
+      class="nav-link text-muted"
+      href="day_3.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-6
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_4-html"
+      class="nav-link text-muted"
+      href="day_4.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-7
+    </a>
+  </li>
+  
+  <li class="nav-item">
+    <a
+      id="day_5-html"
+      class="nav-link text-muted"
+      href="day_5.html"
+      aria-controls="nav-home"
+      aria-selected="true"
+      >Dec-8
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+<!---->
+<!--  -->
+<!--localcheck: Europe/London-->
+<!---->
+<!--finalchosen: Europe/London-->
+
+<div id="day">
+
+  
+
+  
+
+  
+
+  
+    <h2 class="day-title" id=pos>Poster Sessions</h2>
+    <div class="cards row p-4">
+  
+  
+  
+    
+  
+  
+    
+  
+
+  
+<!--    <div class="col-md-6 col-sm-12 p-3" style="box-sizing: border-box;">-->
+        <div class="col-12 p-3" style="box-sizing: border-box;">
+      
+
+      
+      
+
+
+
+      
+      
+
+      <a class="full-card-link" href="papers.html?session=7">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+          <div
+            class="card-header text-center"
+            style="width: 100%;"
+          >
+          
+            
+            <h3 class="m-3 card-title main-title text-left">
+              Paper Session - 7
+            </h3>
+            <div class="m-3 text-left card-subtitle text-muted">
+              <p>Session Chair: ‪Gaël Richard (Télécom Paris)</p>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+              2022-12-08 | 09:00 (Asia/Calcutta)
+            </div>
+
+            <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+              <p>Browse the active poster session's channels, joining calls to ask questions and discuss research with presenters, and leave comments in the channel for asynchronous chatting later.</p>
+<ul>
+<li><b>P7-01: A unified model for zero-shot singing voice conversion and synthesis</b><br>Jui-Te Wu, Jun-You Wang, Jyh-Shing Roger Jang, Li Su</li>
+<li><b>P7-02: Semantic Control of Generative Musical Attributes</b><br>Stewart Greenhill, Majid Abdolshah, Vuong Le, Sunil Gupta, Svetha Venkatesh</li>
+<li><b>P7-03: Music Representation Learning Based on Editorial Metadata from Discogs</b><br>Pablo Alonso-Jiménez, Xavier Serra, Dmitry Bogdanov</li>
+<li><b>P7-04: Melody Infilling with User-Provided Structural Context</b><br>Chih-Pin Tan, Alvin W Y Su, Yi-Hsuan Yang</li>
+<li><b>P7-05: Robust Melody Track Identification in Symbolic Music</b><br>Xichu Ma, Xiao Liu, Bowen Zhang, Ye Wang</li>
+<li><b>P7-06: Tracking the Evolution of a Band's Live Performances over Decades</b><br>Florian Thalmann, Eita Nakamura, Kazuyoshi Yoshii</li>
+<li><b>P7-07: Evaluating Generative Audio Systems and Their Metrics</b><br>Ashvala Vinay, Alexander Lerch</li>
+<li><b>P7-08: Representation Learning for the Automatic Indexing of Sound Effects Libraries</b><br>Alison B Ma, Alexander Lerch</li>
+<li><b>P7-09: Concept-Based Techniques for ""Musicologist-Friendly"" Explanations in Deep Music Classifiers</b><br>Francesco Foscarin, Katharina Hoedt, Verena Praher, Arthur Flexer, Gerhard Widmer</li>
+<li><b>P7-10: Verse versus Chorus: Structure-aware Feature Extraction for Lyrics-based Genre Recognition</b><br>Maximilian Mayerl, Stefan Brandl, Günther Specht, Markus Schedl, Eva Zangerle</li>
+<li><b>P7-11: Transfer Learning of wav2vec 2.0 for Automatic Lyric Transcription</b><br>Longshen Ou, Xiangming Gu, Ye Wang</li>
+<li><b>P7-12: A Novel Dataset and Deep Learning Benchmark for Classical Music Form Recognition and Analysis</b><br>Daniel Szelogowski, Lopamudra Mukherjee, Benjamin Whitcomb</li>
+<li><b>P7-13: BAF: An audio fingerprinting dataset for broadcast monitoring</b><br>Guillem Cortès, Alex Ciurana, Emilio Molina, Marius Miron, Owen Meyers, Joren Six, Xavier Serra</li>
+<li><b>P7-14: Cadence Detection in Symbolic Classical Music using Graph Neural Networks</b><br>Emmanouil Karystinaios, Gerhard Widmer</li>
+<li><b>P7-15: Domain Adversarial Training on Conditional Variational Auto-Encoder for Controllable Music Generation</b><br>Jingwei Zhao, Gus Xia, Ye Wang</li>
+<li><b>P7-16: Modeling perceptual loudness of piano tone: theory and applications</b><br>Yang Qu, Yutian Qin, Lecheng Chao, Hangkai Qian, Ziyu Wang, Gus Xia</li>
+<li><b>P7-17: On the Impact and Interplay of Input Representations and Network Architectures for Automatic Music Tagging</b><br>Maximilian Damböck, Richard Vogl, Peter Knees</li>
+</ul>
+<p>An asterisk (*) indicates long presentations (paper award candidates)</p>
+            </div>
+
+          
+          </div>
+        </div>
+      </a>
+    </div>
+  
+</div>
+  
+
+  
+    <h2 class="day-title" id=industry>Industry Session</h2>
+    <div class="cards row p-4">
+  
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 200px; width: 100%;"
+      >
+        
+          <a id="In" >
+            <h3 class="card-title main-title m-3 text-left">Industry Session</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          <p>Session Chair: Siddharth Bhardwaj (beatoven.ai)</p>
+        </div>
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2022-12-08 | 11:30 (Asia/Calcutta)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          <p>Industry presentation session will include short presentations from our industry sponsors. The session will have a 12 min talks by our Platinum sponsors Spotify and Moises, and 8 min talks by our Gold sponsors Adobe, Deezer, Utopia music, Pandora, Smule, Yamaha and Chordify.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+
+  
+
+  
+    <h2 class="day-title" id=awards>Business Meeting and Awards</h2>
+    <div class="cards row p-4">
+  
+  
+  <div class="col-12 p-3" style="box-sizing: border-box;">
+    <div class="card" style="display: block; overflow: hidden; width: 100%;">
+      <div
+        class="card-header text-center"
+        style="min-height: 200px; width: 100%;"
+      >
+        
+          <a id="So" >
+            <h3 class="card-title main-title m-3 text-left">Society meeting, awards and closing</h3>
+          </a>
+        
+        <div class="m-3 text-left card-subtitle text-muted">
+          <p>Session Chair: Geoffroy Peeters (IRCAM, Télécom Paris)</p>
+        </div>
+        <div class="m-3 text-left card-subtitle" style="display:flex; align-content: center;">
+          2022-12-08 | 13:30 (Asia/Calcutta)
+        </div>
+<!--        <div class="m-3 text-center">-->
+<!--        -->
+<!--        </div>-->
+        <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+          <p>Society meeting, awards and closing</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+
+  
+    <h2 class="day-title" id=lbd>Late Breaking Demo</h2>
+    <div class="cards row p-4">
+  
+  
+  
+    
+  
+    
+  
+  
+    
+  
+    
+  
+
+  
+<!--    <div class="col-md-6 col-sm-12 p-3" style="box-sizing: border-box;">-->
+        <div class="col-12 p-3" style="box-sizing: border-box;">
+      
+
+      
+      
+
+
+
+      
+      
+
+      <a class="full-card-link" href="lbds.html?session=Physical">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+          <div
+            class="card-header text-center"
+            style="width: 100%;"
+          >
+          
+            
+            <h3 class="m-3 card-title main-title text-left">
+              Late-breaking/Demo (Physical)
+            </h3>
+            <div class="m-3 text-left card-subtitle text-muted">
+              <p>Session Chairs: Sanjeel Parekh (Télécom Paris), Siddharth Gururani (NVIDIA)</p>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+              2022-12-08 | 15:30 (Asia/Calcutta)
+            </div>
+
+            <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+              <p>The Late-breaking/Demo (LBD) session is a forum for sharing prototype systems, initial concepts, and early results which may have not yet fully matured but are of interest to the Music-IR community. It is also a great entry point for people who are new to ISMIR to showcase their preliminary work and receive early feedback from fellow researchers. Attendees of the LBD can interact with demos or discuss their thoughts on the latest developments in the field.</p>
+            </div>
+
+          
+          </div>
+        </div>
+      </a>
+    </div>
+  
+<!--    <div class="col-md-6 col-sm-12 p-3" style="box-sizing: border-box;">-->
+        <div class="col-12 p-3" style="box-sizing: border-box;">
+      
+
+      
+      
+
+
+
+      
+      
+
+      <a class="full-card-link" href="lbds.html?session=Virtual">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+          <div
+            class="card-header text-center"
+            style="width: 100%;"
+          >
+          
+            
+            <h3 class="m-3 card-title main-title text-left">
+              Late-breaking/Demo (Virtual)
+            </h3>
+            <div class="m-3 text-left card-subtitle text-muted">
+              <p>Session Chairs: Sanjeel Parekh (Télécom Paris), Siddharth Gururani (NVIDIA)</p>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+              2022-12-08 | 17:30 (Asia/Calcutta)
+            </div>
+
+            <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+              <p>The Late-breaking/Demo (LBD) session is a forum for sharing prototype systems, initial concepts, and early results which may have not yet fully matured but are of interest to the Music-IR community. It is also a great entry point for people who are new to ISMIR to showcase their preliminary work and receive early feedback from fellow researchers. Attendees of the LBD can interact with demos or discuss their thoughts on the latest developments in the field.</p>
+            </div>
+
+          
+          </div>
+        </div>
+      </a>
+    </div>
+  
+</div>
+  
+
+  
+
+  
+
+  
+
+  
+
+</div>
+
+<script src="static/js/schedule_nav.js"></script>
+<script src="static/js/anchor_offset.js"></script>
+
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2023 ISMIR Organization Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>

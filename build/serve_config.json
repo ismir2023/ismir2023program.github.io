@@ -1,0 +1,56 @@
+{
+  "analytics": "UA-",
+  "auth0_client_id": "JIdr6wi0z27LyLgwkJF0fpk700aj7MNH",
+  "auth0_domain": "miniconf.auth0.com",
+  "background_image": "static/images/Milano_ISMIR_complete_logo.png",
+  "browse_paper_buttons": 0,
+  "calendar": {
+    "colors": {
+      "---": "#bed972",
+      "LBD": "#761F8D",
+      "all": "#309764",
+      "awards": "#309764",
+      "industry": "#AF0704",
+      "lunch": "#515151",
+      "meet": "#2380BD",
+      "mus": "#206A39",
+      "open": "#309764",
+      "pos": "#E67C73",
+      "registration": "#515151",
+      "sat": "#7986CB",
+      "social": "#CB9E22",
+      "tut": "#C9431B",
+      "vmeet": "#2380BD",
+      "wimir": "#309764"
+    },
+    "sunday_saturday": false
+  },
+  "citation_date": "5-9 November 2023",
+  "date": "5-9 November 2023",
+  "lbd_day_release": 4,
+  "lbd_embeds": true,
+  "logo": {
+    "height": "auto",
+    "image": "static/images/ismir_tabicon.png",
+    "width": "300px"
+  },
+  "music_links": true,
+  "music_program_channel": "#music-program",
+  "music_program_url": "",
+  "name": "ISMIR 2023",
+  "opening_ref_title_1": "Opening Session",
+  "opening_ref_title_2": "Opening Session",
+  "organization": "ISMIR Organization Committee",
+  "page_title": {
+    "prefix": "ISMIR 2023",
+    "separator": ": "
+  },
+  "paper_day_release": 3,
+  "paper_embeds": true,
+  "paper_videos": true,
+  "poster_embeds": true,
+  "proceedings_title": "Proceedings of the First MiniCon Conference",
+  "site_title": "ISMIR 2023",
+  "tagline": "ISMIR 2023 HYBRID CONFERENCE",
+  "use_auth0": null
+}

@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://seyong92.github.io/PyTSMod-ISMIR2020LBD/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    
+    <!-- Non social metatags -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    
+    <title>PyTSMod: A Python Implementation of Time-Scale Modification Algorithms</title>
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Place this data between the <head> tags of your website -->
+
+<meta name="description" content="">
+
+
+
+
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+
+
+
+<meta name="twitter:title" content="PyTSMod: A Python Implementation of Time-Scale Modification Algorithms">
+<meta name="twitter:description" content="">
+
+
+
+<!-- Twitter summary card with large image must be at least 280x150px -->
+
+<meta name="twitter:url" content="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="PyTSMod: A Python Implementation of Time-Scale Modification Algorithms">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/">
+
+
+<meta property="og:description" content="">
+<meta property="og:site_name" content="PyTSMod: A Python Implementation of Time-Scale Modification Algorithms">
+
+
+<meta property="og:locale" content="">
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <link rel="canonical" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/">
+    
+    
+    
+    <link rel="shortcut icon" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/favicon.ico">
+    
+    <meta name="robots" content="noarchive">
+    
+    <!-- <link rel="alternate" media="only screen and (max-width: 640px)" href="">
+        <link rel="alternate" media="handheld" href=""> -->
+        
+        
+        <link rel="stylesheet" href="./poster_files/style.css">
+    </head>
+    <body>
+        
+        <!-- <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+
+    
+
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+              
+              
+            
+          
+            
+            
+              
+              
+            
+          
+            
+            
+              
+              
+            
+          
+            
+            
+              
+              
+            
+          
+            
+            
+              
+                <a class="page-link" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/about.html">About</a>
+              
+            
+          
+            
+            
+              
+                <a class="page-link" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/contact.html">Contact</a>
+              
+            
+          
+            
+            
+              
+                <a class="page-link" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/now.html">Now</a>
+              
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+ -->
+        
+        
+        
+        
+        
+        <section class="page-header">
+            <h1 class="project-name">PyTSMod: A Python Implementation of Time-Scale Modification Algorithms</h1>
+            <h2 class="project-tagline">Music and Audio Computing Lab., KAIST</h2>
+            <h2 class="project-tagline">Sangeon Yong, Soonbeom Choi, and Juhan Nam</h2>
+            
+            <a href="https://github.com/KAIST-MACLab/PyTSMod" class="btn">View on GitHub</a>
+            
+            <!-- <a href="about:blank" class="btn">See Paper</a>
+	    <a href="about:blank" class="btn">See Video</a> -->
+            
+            
+            <!-- Post tagline -->
+            
+            <!-- End: Post tagline -->
+        </section>
+        
+        <section class="main-content">
+            
+            <div>
+
+  <style>
+.main-content table {
+    display: inline-table;
+}
+table {
+    table-layout:fixed;
+    width: 100%;
+    overflow: hidden;
+}
+#player{
+    width: 100%;
+}
+</style>
+
+<h2 id="overview">Overview</h2>
+
+<p>Time-scale modification (TSM) is a digital audio effect that adjusts the length of an audio signal while preserving its pitch. The TSM audio effect is widely used in not only sound production but also music and audio research such as for data augmentation. In this paper, we present PyTSMod, an open-source Python library that implements several different classical TSM algorithms. We expect that PyTSMod can help MIR and audio researchers easily use the TSM algorithms in the Python-based environment.</p>
+
+<h2 id="available-tsm-algorithms">Available TSM algorithms</h2>
+
+<ul>
+  <li>Overlap-Add (OLA)
+    <ul>
+      <li>OLA is the most simple TSM algorithm that changes the length of the signal through modifying the hop size between analysis frame and synthesis frame.</li>
+    </ul>
+  </li>
+  <li>Pitch Synchronous Overlap-Add (TD-PSOLA)
+    <ul>
+      <li>TD-PSOLA is the algorithm that analyzes the orignal waveforms to create pitich-synchronous analysis windows and synthesize the output signal both for modifying time-scale and pitch-scale.</li>
+    </ul>
+  </li>
+  <li>Waveform Similarity Overlap-Add (WSOLA)
+    <ul>
+      <li>WSOLA maximizes the waveform similarity by allowing timing tolerance to analysis frame to find the most similar position through cross correlation.</li>
+    </ul>
+  </li>
+  <li>Phase Vocoder (PV)
+    <ul>
+      <li>Phase vocoder estimates instantaneous frequency, and it is used to update phases of input signal’s frequency components in short-time Fourier transform. Although TSM results with phase vocoder has high phase continuity, it causes an transient smearing for percussive audio sources and a coloring artifact called phasiness.</li>
+    </ul>
+  </li>
+  <li>TSM based on harmonic-percussive source separation (HPTSM)
+    <ul>
+      <li>A novel TSM algorithm that applying phase vocoder to only harmonic sources and applying OLA to only percussive sources.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>PyTSMod is hosted on PyPI. To install, run the following command in your Python environment:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip <span class="nb">install </span>pytsmod
+</code></pre></div></div>
+
+<h2 id="examples">Examples</h2>
+
+<h3 id="singing-voice">Singing Voice</h3>
+
+<h4 id="original">Original</h4>
+
+<audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-original.flac"></audio>
+
+<h4 id="tsm-results">TSM Results</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Algorithm</td>
+      <td>α=0.5</td>
+      <td>α=1.2</td>
+      <td>α=1.5</td>
+    </tr>
+    <tr>
+      <td>OLA</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-ola-150.flac"></audio></td>
+    </tr>
+    <tr>
+      <td>TD-PSOLA <sup id="fnref:1" role="doc-noteref"><a href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/#fn:1" class="footnote">1</a></sup></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-tdpsola-150.flac"></audio></td>
+    </tr>
+    <tr>
+      <td>WSOLA</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-wsola-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-wsola-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-wsola-150.flac"></audio></td>
+    </tr>
+    <tr>
+      <td>PV</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pv-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pv-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pv-150.flac"></audio></td>
+    </tr>
+    <tr>
+      <td>PV (with phase lock)</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-pvlock-150.flac"></audio></td>
+    </tr>
+    <tr>
+      <td>HPTSM</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-hp-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-hp-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/singing-hp-150.flac"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="music-clip">Music Clip</h3>
+
+<h4 id="original-1">Original</h4>
+
+<audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-original.flac"></audio>
+
+<h4 id="tsm-results-1">TSM Results</h4>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Algorithm</td>
+      <td>α=0.5</td>
+      <td>α=1.2</td>
+      <td>α=1.5</td>
+    </tr>
+    <tr>
+      <td>OLA</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-ola-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-ola-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-ola-150.flac"></audio></td>
+    </tr>
+    <tr>
+      <td>WSOLA</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-wsola-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-wsola-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-wsola-150.flac"></audio></td>
+    </tr>
+    <tr>
+      <td>PV</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pv-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pv-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pv-150.flac"></audio></td>
+    </tr>
+    <tr>
+      <td>PV (with phase lock)</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pvlock-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pvlock-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-pvlock-150.flac"></audio></td>
+    </tr>
+    <tr>
+      <td>HPTSM</td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-hp-050.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-hp-120.flac"></audio></td>
+      <td><audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/sunny-hp-150.flac"></audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For more audio examples, please visit the <a href="https://github.com/KAIST-MACLab/PyTSMod">GitHub repo</a> of PyTSMod.</p>
+
+<h2 id="references">References</h2>
+
+<p>[1] Jonathan Driedger, Meinard Müller. “TSM Toolbox: MATLAB Implementations of Time-Scale Modification Algorithms”, <em>Proceedings of the 17th International Conference on Digital Audio Effects (DAFx-14).</em> 2014.</p>
+
+<p>[2] Jonathan Driedger, Meinard Müller. “A review of time-scale modification of music signals”, <em>Applied Sciences, 6(2), 57.</em> 2016.</p>
+
+<p>[3] Udo Zölzer. “DAFX: digital audio effects”, <em>John Wiley &amp; Sons.</em> 2011.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://github.com/marl/crepe">CREPE</a> is used for extracting pitch of the audio source.&nbsp;<a href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+
+  <!--<h2>Latest Posts</h2>
+
+  <div>&nbsp;</div>
+
+  <ul class="post-list">
+    
+      <li>
+
+        
+        <span class="post-meta">Apr 29, 2017</span>
+
+        <h2>
+          <a class="post-link" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/2017/04/29/cayman-example-content.html" title="Example content">Example content</a>
+        </h2>
+
+        <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+
+
+
+      </li>
+    
+      <li>
+
+        
+        <span class="post-meta">Apr 20, 2017</span>
+
+        <h2>
+          <a class="post-link" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/2017/04/20/welcome-to-jekyll.html" title="Welcome to Jekyll">Welcome to Jekyll</a>
+        </h2>
+
+        <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many...
+
+      </li>
+    
+      <li>
+
+        
+        <span class="post-meta">Apr 20, 2017</span>
+
+        <h2>
+          <a class="post-link" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/misc/2017/04/20/super-long-article.html" title="Some articles are just so long they deserve a really long title to see if things will break well">Some articles are just so long they deserve a really long title to see if things will break well</a>
+        </h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis...
+
+      </li>
+    
+      <li>
+
+        
+        <span class="post-meta">Apr 20, 2017</span>
+
+        <h2>
+          <a class="post-link" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/junk/2017/04/20/post-content-styles.html" title="Post content styles">Post content styles</a>
+        </h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.</p>
+
+
+
+      </li>
+    
+      <li>
+
+        
+        <span class="post-meta">Apr 20, 2017</span>
+
+        <h2>
+          <a class="post-link" href="https://seyong92.github.io/PyTSMod-ISMIR2020LBD/2017/04/20/my-example-post.html" title="My Example Post">My Example Post</a>
+        </h2>
+
+        <p>Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse...
+
+      </li>
+    
+  </ul>-->
+
+</div>
+
+            
+            <footer class="site-footer">
+                <!-- SVG icons from https://iconmonstr.com -->
+            </footer>
+        </section>
+        
+        <script>
+            var menu = document.querySelector("nav.site-nav");
+            var checkbox = document.getElementById("nav-trigger");
+            
+            // close menu if click outside menu
+            document.addEventListener("click", function(e) {
+                if (menu != e.target &&
+                        !isDescendant(menu, e.target)) {
+                    checkbox.checked = false;
+                }
+            }, false);
+            
+            function isDescendant(parent, child) {
+                var node = child.parentNode;
+                while (node != null) {
+                    if (node == parent) {
+                        return true;
+                    }
+                    node = node.parentNode;
+                }
+                return false;
+            }  
+        </script>
+        
+        <style>
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 56.333%;
+        height: 0;
+        background: black;
+    }
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }    
+    </style>
+    
+    <script>
+    function get_youtube_id(url) {
+        var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+        return (url.match(p)) ? RegExp.$1 : false;
+    }
+    function vimeo_embed(url,el) {
+        var id = false;
+        $.ajax({
+          url: 'https://vimeo.com/api/oembed.json?url='+url,
+          async: true,
+          success: function(response) {
+            if(response.video_id) {
+              id = response.video_id;
+              if(url.indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
+              if(url.indexOf('loop=1') !== -1) var loop=1; else var loop=0;
+              var theInnerHTML = '<div class="videoWrapper"><iframe src="https://player.vimeo.com/video/'+id+'/?byline=0&title=0&portrait=0';
+              if(autoplay==1) theInnerHTML += '&autoplay=1';
+              if(loop==1) theInnerHTML += '&loop=1';
+              theInnerHTML += '" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'; 
+              el.innerHTML = theInnerHTML;
+            }
+          }
+        });
+    }
+    function video_embed() {
+        var p = document.getElementsByTagName('p');
+        for(var i = 0; i < p.length; i++) {
+            //check if this is an external url (that starts with https:// or http://
+            if (p[i].innerHTML.indexOf("http://") == 0 ||
+                p[i].innerHTML.indexOf("https://") == 0) {
+                var youtube_id = get_youtube_id(p[i].innerHTML);
+                if(youtube_id) {
+                    if(p[i].innerHTML.indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
+                    if(p[i].innerHTML.indexOf('loop=1') !== -1) var loop=1; else var loop=0;
+                    var theInnerHTML = '<div class="videoWrapper"><iframe width="720" height="420" src="https://www.youtube.com/embed/' + youtube_id + '?rel=0&showinfo=0';
+                    if(autoplay==1) theInnerHTML += '&autoplay=1';
+                    if(loop==1) theInnerHTML += '&loop=1&playlist='+youtube_id+'&version=3';
+                    if(p[i].innerHTML.indexOf('start=') !== -1) theInnerHTML += '&start='+p[i].innerHTML.substring(p[i].innerHTML.indexOf('start=')+6);
+                    theInnerHTML += '" frameborder="0" allowfullscreen></iframe></div>';
+                    p[i].innerHTML = theInnerHTML;
+                }
+                if(p[i].innerHTML.indexOf('vimeo.com') !== -1) {
+                    //ask vimeo for the id and place the embed
+                    vimeo_embed(p[i].innerHTML,p[i]);
+                }
+            }
+        }
+    }
+    video_embed();
+    
+    function mp3_embed() {
+        var p = document.getElementsByTagName('p');
+        for(var i = 0; i < p.length; i++) {
+            if(p[i].innerHTML.indexOf('.mp3') !== -1) {
+                var str = p[i].innerHTML.split('?');
+                if(str.length == 1) str[1] = '';
+                var str1 = str[1];
+                str1 = str1.replace('&','').replace('&','');
+                str1 = str1.replace('autoplay=1','').replace('autoplay=0','');
+                str1 = str1.replace('loop=1','').replace('loop=0','');
+                str1 = str1.replace('controls=0','').replace('controls=1','');
+    
+                if (str[0].lastIndexOf('.mp3', str[0].length - 4) === str[0].length - 4 && str1.length == 0) {
+                    if(str[1].indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
+                    if(str[1].indexOf('loop=1') !== -1) var loop=1; else var loop=0;
+                    if(str[1].indexOf('controls=0') !== -1) var controls=0; else var controls=1;
+                    var newInnerHTML = '<audio';
+                    if(autoplay==1) newInnerHTML += ' autoplay';
+                    if(loop==1) newInnerHTML += ' loop';
+                    if(controls==1) newInnerHTML += ' controls';
+                    newInnerHTML += '><source src="'+str[0]+'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
+                    p[i].innerHTML = newInnerHTML;
+                }
+            }
+        }
+    }
+    mp3_embed();
+    </script>
+    
+    
+    
+<script>mendeleyWebImporter = { open: function () { window.postMessage('0.42402277400591326', 'https://seyong92.github.io') } }</script></body><whale-quicksearch translate="no"></whale-quicksearch></html>

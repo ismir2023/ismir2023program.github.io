@@ -1,0 +1,56 @@
+[
+  {
+    "channel_name": "yamaha-sponsor",
+    "channel_url": "https://slack.com/app_redirect?channel=C04CGD56LQ5",
+    "company": "Yamaha",
+    "external_web_link": "https://www.yamaha.com/",
+    "jd": "Yamaha corporation is recruiting a wide range of competitive R&D engineers for its internship programs. \nPlease check the [JD here](https://drive.google.com/file/d/1---PBAAZUl74KvI0R3m6_HR-Pn5Obl-F/preview)",
+    "title": "Global Internship Program Summer 2023",
+    "uid": "yamaha"
+  },
+  {
+    "channel_name": "siriusxm-pandora-sponsor",
+    "channel_url": "https://slack.com/app_redirect?channel=C04CKBK89K4",
+    "company": "SiriusXM/Pandora",
+    "external_web_link": "https://www.siriusxm.com/pandora",
+    "jd": "Checkout the different job openings at SiriusXM/Pandora\n\n* [Staff Scientist](https://careers.siriusxm.com/careers/jobs/1960?lang=en-us)\n* [Staff Scientist](https://careers.siriusxm.com/careers/jobs/13528?lang=en-us)\n* [Staff/Principal Applied Scientist - Search](https://careers.siriusxm.com/careers/jobs/1561?lang=en-us)\n* [Product Analyst](https://careers.siriusxm.com/careers/jobs/13316?lang=en-us)\n* [Senior Product Analyst](https://careers.siriusxm.com/careers/jobs/13315?lang=en-us)",
+    "title": "Research roles at SiriusXM/Pandora",
+    "uid": "sirius"
+  },
+  {
+    "channel_name": "chordify-sponsor",
+    "channel_url": "https://slack.com/app_redirect?channel=C04CKBKBDMG",
+    "company": "Chordify",
+    "external_web_link": "https://chordify.net/",
+    "jd": "Chordify is a scale-up company that builds products based on state-of-the-art MIR technology to help musicians around the world to live their music. We are a holacratic organisation without bosses in which everybody has full autonomy to work on the tasks and projects that they believe they can have the biggest impact on reaching our common goals. Research at Chordify happens on a variety of MIR-related topics such as automatic chord estimation, beat-tracking, key estimation, polyphonic guitar transcription, music recommendation or automatic playlist generation. In addition, we also do research in fields that are not specifically focused on MIR such as natural language processing or user research. \n\n\n\nIn case you would like to join us in one of our offices, in Utrecht or Groningen, the Netherlands, for an internship to do research in one or multiple of the above mentioned fields feel free to reach out to us via research-internships@chordify.net. Please include a short presentation of your research background and your motivation to join our team. You can also keep an eye on the Chordify jobs page for openings and more information about Chordify and the team. Don't hesitate to write to us if you want to get to know us better.",
+    "title": "Research work at Chordify",
+    "uid": "chordify"
+  },
+  {
+    "channel_name": "moises-sponsor",
+    "channel_url": "https://slack.com/app_redirect?channel=C04CY0Y3WSD",
+    "company": "Moises.AI",
+    "external_web_link": "https://moises.ai/",
+    "jd": "### Ph.D. Intern\n\nAre you happy when your work reaches a large user base? Do you have experience with musical source separation? We invite you to apply for a Ph.D. internship with Moises.AI so we can build future technologies that can help millions of users worldwide.\n\n### Researcher\n\nMoises.AI is looking for a full-time researcher to work with Applied ML to source separation. Do you wanna help millions of users achieve their creative potential? We invite you to apply for a full-time research position at Moises.AI.",
+    "title": "Research roles at Moises.AI",
+    "uid": "moises"
+  },
+  {
+    "channel_name": "deezer-sponsor",
+    "channel_url": "https://slack.com/app_redirect?channel=C04CCPD09E2",
+    "company": "Deezer ",
+    "external_web_link": "https://www.deezer.com/soon",
+    "jd": "* [Lyrics Alignment](https://smrtr.io/cnzCv)\n* [Source Separation](https://smrtr.io/cmsN-)\n* [Musical Taste Modeling](https://smrtr.io/cnnv5)\n* [Contextual Recommendation](https://smrtr.io/cnndk)",
+    "title": "Deezer Research: Exploring music at scale",
+    "uid": "deezer"
+  },
+  {
+    "channel_name": "tiktok-sponsor",
+    "channel_url": "https://ismir2022program.slack.com/archives/C04CLCBN6GK",
+    "company": "ByteDance",
+    "external_web_link": "https://www.bytedance.com/en/",
+    "jd": "## Inspire creativity and enrich life ..with music technology!\n\u200b\nTikTok is the leading destination for short-form mobile video. Our mission is to inspire creativity and bring joy. TikTok has global offices including Los Angeles, New York, London, Paris, Berlin, Dubai, Singapore, Jakarta, Seoul and Tokyo. \n\u200b\nWe are the Speech, Audio, and Music Intelligence (SAMI) team at TikTok: a group of research scientists, engineers, music producers and product managers working across the US, Europe and China. Our mission is to empower content interaction and creation via sound and music technology. We build cutting-edge tools for music generation, audio synthesis, and music understanding, and integrate them into applications and products that serve billions of users. The SAMI team develops music technology for a wide range of ByteDance products including TikTok, Resso and more, in collaboration with industry-leading teams in computer vision, graphics and machine learning. We are looking for passionate and driven individuals to work on these exciting technologies, integrate them into various products, and join us in our mission to inspire creativity and bring joy... with music!\n\u200b\nFor all listings, search \"SAMI\" at [careers.tiktok.com](https://careers.tiktok.com/position?keywords=sami)",
+    "title": "TikTok",
+    "uid": "tiktok"
+  }
+]
