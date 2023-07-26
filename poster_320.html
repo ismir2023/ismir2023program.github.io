@@ -1,0 +1,369 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/ismir_tab_icon.png">
+
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/custom.css" />
+    <link rel="stylesheet" href="static/css/lazy_load.css" />
+    <link rel="stylesheet" href="static/css/typeahead.css" />
+    <link rel="stylesheet" href="static/css/poster.css" />
+    <link rel="stylesheet" href="static/css/music.css" />
+    <link rel="stylesheet" href="static/css/piece.css" />
+
+
+    <!-- <link rel="stylesheet" href="https://gitcdn.xyz/repo/wingkwong/jquery-chameleon/master/src/chameleon.min.css"> -->
+
+    <!-- External Javascript libs  -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.3/dist/handlebars.min.js" integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha256-WqU1JavFxSAMcLP2WIOI+GB2zWmShMI82mTpLDcqFUg=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/min/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.28/builds/moment-timezone-with-data.min.js" integrity="sha256-IWYg4uIC8/erItNXYvLtyYHioRi2zT1TFva8qaAU/ww=" crossorigin="anonymous"></script>
+    <!-- <script src="static/js/chameleon.js"></script> -->
+
+
+    <!-- Library libs -->
+    <script src="static/js/typeahead.bundle.js"></script>
+
+    
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha256-YLGeXaapI0/5IgZopewRJcFXomhRMlYYjugPLSyNjTY=" crossorigin="anonymous">
+
+    <!-- External Fonts (no google for china) -->
+    <link
+      href="static/css/Lato.css"
+      rel="stylesheet"
+    />
+    <link href="static/css/Exo.css" rel="stylesheet" />
+    <link
+      href="static/css/Cuprum.css"
+      rel="stylesheet"
+    />
+    <link
+      href="static/css/Ambiant.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="static/css/chameleon.css" rel="stylesheet"/> -->
+    <title>ISMIR 2023: Generating Coherent Drum Accompaniment with Fills and Improvisations</title>
+    
+<meta name="citation_title" content="Generating Coherent Drum Accompaniment with Fills and Improvisations" />
+
+<meta name="citation_author" content="Dahale, Rishabh A*" />
+
+<meta name="citation_author" content=" Talwadker, Vaibhav Vinayak" />
+
+<meta name="citation_author" content=" Rao, Preeti" />
+
+<meta name="citation_author" content=" Verma, Prateek" />
+
+<meta name="citation_publication_date" content="5-9 November 2023" />
+<meta name="citation_conference_title" content="Ismir 2023 Hybrid Conference" />
+<meta name="citation_inbook_title" content="Proceedings of the First MiniCon Conference" />
+<meta name="citation_abstract" content="Creating a complex work of art like music necessitates profound creativity. With recent advancements in Deep Learning and powerful models such as Transformers, there has been huge progress in automatic music generation. In an accompaniment generation context, creating a coherent drum pattern with apposite fills and improvisations at proper locations in a song is a challenging task even for an experienced drummer. Drum beats tend to follow a repetitive pattern through stanzas with fills/improvisation at section boundaries. In this work, we tackle the task of drum pattern generation conditioned on the accompanying music played by four melodic instruments – Piano, Guitar, Bass and Strings. We use the transformer sequence to sequence model to generate a basic drum pattern conditioned on the melodic accompaniment to find that improvisation is largely absent, attributed possibly to its relatively low representation in the training data. We propose a novelty function that represents the extent of improvisation in a specific bar relative to its neighbors. We train a model to detect improvisation positions from the melodic accompaniment tracks. Finally, we use a novel BERT inspired in-filling architecture, to learn the structure of both the drums and melody to in-fill elements of improvised music.&lt;br&gt;&lt;br&gt; &lt;b&gt;&lt;p align=&#34;center&#34;&gt;[Direct link to video](https://drive.google.com/open?id=1aINKqGpGW86_tANRiw6zTH5iz9GbqTB6)&lt;/b&gt;" />
+
+<meta name="citation_keywords" content="Musical features and properties -&gt; structure, segmentation, and form" />
+
+<meta name="citation_keywords" content="MIR tasks -&gt; music generation" />
+
+<meta name="citation_pdf_url" content="" />
+<meta id="yt-id" data-name= />
+<meta id="bb-id" data-name= />
+
+
+  </head>
+
+  <body>
+    <!-- NAV -->
+    
+    <!--
+
+    ('tutorials.html', 'Tutorials'),
+    ('index.html, 'Home'),
+    ('special_meetings.html', 'Special Meetings'),
+    -->
+
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-light mr-auto"
+      id="main-nav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="https://ismir2023.ismir.net">
+          <img
+             class="logo" src="static/images/ismir_tabicon.png"
+             height="auto"
+             width="300px"
+          />
+        </a>
+        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-right flex-grow-1"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="calendar.html">Schedule</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="papers.html">Papers</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="music.html">Music</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="lbds.html">LBDs</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="industry.html?session=Platinum">Industry</a>
+            </li>
+            
+            <li class="nav-item ">
+              <a class="nav-link" href="jobs.html">Jobs</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+    <!-- User Overrides -->
+     
+
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+         
+      </div>
+      <!-- Content -->
+      <div class="content">
+        
+
+<!-- Title -->
+<div class="pp-card m-3" style="">
+  <div class="card-header">
+    <h2 class="card-title main-title text-center" style="">
+      P2-15: Generating Coherent Drum Accompaniment with Fills and Improvisations
+    </h2>
+    <h3 class="card-subtitle mb-2 text-muted text-center">
+      
+      <a href="papers.html?filter=authors&search=Dahale, Rishabh A*" class="text-muted"
+        >Dahale, Rishabh A*</a
+      >,
+      
+      <a href="papers.html?filter=authors&search= Talwadker, Vaibhav Vinayak" class="text-muted"
+        > Talwadker, Vaibhav Vinayak</a
+      >,
+      
+      <a href="papers.html?filter=authors&search= Rao, Preeti" class="text-muted"
+        > Rao, Preeti</a
+      >,
+      
+      <a href="papers.html?filter=authors&search= Verma, Prateek" class="text-muted"
+        > Verma, Prateek</a
+      >
+      
+    </h3>
+    <p class="card-text text-center">
+      <span class="">Subjects (starting with primary):</span>
+      
+      <a
+        href="papers.html?filter=keywords&search=Musical features and properties -&gt; structure, segmentation, and form"
+        class="text-secondary text-decoration-none"
+        >Musical features and properties -&gt; structure, segmentation, and form</a
+      > ; 
+      
+      <a
+        href="papers.html?filter=keywords&search=MIR tasks -&gt; music generation"
+        class="text-secondary text-decoration-none"
+        >MIR tasks -&gt; music generation</a
+      > 
+      
+    </p>
+    <h4 class="text-muted text-center">
+      Presented In-person, in Bengaluru:
+      
+        4-minute short-format presentation
+      
+    </h4>
+
+  </div>
+</div>
+<div style="display: flex; justify-content: center;" class="btn-toolbar mt-4" role="toolbar">
+  <div class="poster-buttons btn-group btn-group-toggle mb-3" data-toggle="buttons">
+    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#details">
+      Abstract
+    </button>
+    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#paper">
+      Paper
+    </button>
+    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#poster">
+      Poster
+    </button>
+    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#video">
+      Video
+    </button>
+    <!--  -->
+  </div>
+  
+    <div class="btn-group ml-3 mb-3">
+      <a href="https://slack.com/app_redirect?channel=C04CGCW7N4V" class="btn btn-primary"><svg style="display: inline-block; width: 23px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="75 75 150 150" style="enable-background:new 0 0 270 270;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M99.4,151.2c0,7.1-5.8,12.9-12.9,12.9s-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h12.9V151.2z"/>
+		<path class="st0" d="M105.9,151.2c0-7.1,5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v32.3c0,7.1-5.8,12.9-12.9,12.9
+			s-12.9-5.8-12.9-12.9C105.9,183.5,105.9,151.2,105.9,151.2z"/>
+	</g>
+	<g>
+		<path class="st0" d="M118.8,99.4c-7.1,0-12.9-5.8-12.9-12.9s5.8-12.9,12.9-12.9s12.9,5.8,12.9,12.9v12.9H118.8z"/>
+		<path class="st0" d="M118.8,105.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9H86.5c-7.1,0-12.9-5.8-12.9-12.9
+			s5.8-12.9,12.9-12.9C86.5,105.9,118.8,105.9,118.8,105.9z"/>
+	</g>
+	<g>
+		<path class="st0" d="M170.6,118.8c0-7.1,5.8-12.9,12.9-12.9c7.1,0,12.9,5.8,12.9,12.9s-5.8,12.9-12.9,12.9h-12.9V118.8z"/>
+		<path class="st0" d="M164.1,118.8c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9V86.5c0-7.1,5.8-12.9,12.9-12.9
+			c7.1,0,12.9,5.8,12.9,12.9V118.8z"/>
+	</g>
+	<g>
+		<path class="st0" d="M151.2,170.6c7.1,0,12.9,5.8,12.9,12.9c0,7.1-5.8,12.9-12.9,12.9c-7.1,0-12.9-5.8-12.9-12.9v-12.9H151.2z"/>
+		<path class="st0" d="M151.2,164.1c-7.1,0-12.9-5.8-12.9-12.9c0-7.1,5.8-12.9,12.9-12.9h32.3c7.1,0,12.9,5.8,12.9,12.9
+			c0,7.1-5.8,12.9-12.9,12.9H151.2z"/>
+	</g>
+</g>
+</svg> p2-15-dahale</a>
+    </div>
+  
+</div>
+<div class="poster-content">
+  <div id="details" class="pp-card m-3 collapse">
+    <div class="card-body">
+      <div class="card-text">
+        <div id="abstractExample">
+          <span class="font-weight-bold">Abstract:</span>
+          <p>Creating a complex work of art like music necessitates profound creativity. With recent advancements in Deep Learning and powerful models such as Transformers, there has been huge progress in automatic music generation. In an accompaniment generation context, creating a coherent drum pattern with apposite fills and improvisations at proper locations in a song is a challenging task even for an experienced drummer. Drum beats tend to follow a repetitive pattern through stanzas with fills/improvisation at section boundaries. In this work, we tackle the task of drum pattern generation conditioned on the accompanying music played by four melodic instruments – Piano, Guitar, Bass and Strings. We use the transformer sequence to sequence model to generate a basic drum pattern conditioned on the melodic accompaniment to find that improvisation is largely absent, attributed possibly to its relatively low representation in the training data. We propose a novelty function that represents the extent of improvisation in a specific bar relative to its neighbors. We train a model to detect improvisation positions from the melodic accompaniment tracks. Finally, we use a novel BERT inspired in-filling architecture, to learn the structure of both the drums and melody to in-fill elements of improvised music.<br><br> <b><p align="center"><a href="https://drive.google.com/open?id=1aINKqGpGW86_tANRiw6zTH5iz9GbqTB6">Direct link to video</a></b></p>
+        </div>
+      </div>
+      <p></p>
+    </div>
+  </div>
+  <div id="paper" class="collapse">
+    
+    <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
+    <iframe class="fullscreen-iframe" src = "https://archives.ismir.net/ismir2022/paper/000031.pdf#embedded=true" width='100%' height='500px' allowfullscreen webkitallowfullscreen></iframe>
+    
+  </div>
+  <div id="poster" class="collapse">
+    
+    <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
+    <iframe class="fullscreen-iframe" src = "static/posters/320.pdf#embedded=true" width='100%' height='500px' allowfullscreen webkitallowfullscreen></iframe>
+    
+  </div>
+  <div id="video" class="collapse">
+    
+      <div  style="display: flex; justify-content: center;">
+      <iframe src="https://drive.google.com/uc?export=preview&amp;id=1aINKqGpGW86_tANRiw6zTH5iz9GbqTB6" width="640" height="480" sandbox></iframe>
+      </div>
+    
+  </div>
+</div>
+
+
+<script src="static/js/poster.js"></script>
+<script src="static/js/video_selection.js"></script>
+
+      </div>
+    </div>
+    
+    
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-");
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer bg-light p-4">
+      <div class="container">
+        <p class="float-right"><a href="#">Back to Top</a></p>
+        <p class="text-center">© 2023 ISMIR Organization Committee</p>
+      </div>
+    </footer>
+
+    <!-- Code for hash tags -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        if (location.hash !== "") {
+          $('a[href="' + location.hash + '"]').tab("show");
+        }
+
+        $("a[data-toggle='tab']").on("shown.bs.tab", function (e) {
+          var hash = $(e.target).attr("href");
+          if (hash.substr(0, 1) == "#") {
+            var position = $(window).scrollTop();
+            location.replace("#" + hash.substr(1));
+            $(window).scrollTop(position);
+          }
+        });
+      });
+    </script>
+    <script src="static/js/lazy_load.js"></script>
+    
+  </body>
+</html>

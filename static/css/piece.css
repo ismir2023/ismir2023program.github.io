@@ -1,0 +1,62 @@
+.music-page-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.music-page-wrapper .page-header, .speaker-page-wrapper .page-header {
+  display: flex;
+  /* width: 100%; */
+}
+
+.music-content-wrapper {
+  min-height: 400px;
+  white-space: pre-wrap;
+}
+
+.music-page-wrapper .page-header .image-wrapper, .speaker-page-wrapper .page-header .image-wrapper {
+  max-width: 260px;
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.music-page-wrapper .page-header .details, .speaker-page-wrapper .page-header .details {
+  /* width: calc(100% - 260px); */
+  padding-top: 80px;
+  margin-left: 80px;
+}
+
+.music-page-wrapper .page-header .image-wrapper img, .speaker-page-wrapper .page-header .image-wrapper img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .music-page-wrapper .page-header, .speaker-page-wrapper .page-header {
+    flex-direction: column;
+  }
+  .speaker-page-wrapper .page-header .image-wrapper, .music-page-wrapper .page-header .image-wrapper {
+    width: 100%;
+    max-width: none;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+  }
+  .speaker-page-wrapper .page-header .image-wrapper img, .music-page-wrapper .page-header .image-wrapper img {
+    max-width: 80%;
+  }
+
+
+  .music-page-wrapper .page-header .details, .speaker-page-wrapper .page-header .details {
+    width: auto;
+    padding-top: 20px;
+    margin-left: 0px;
+  }
+}
