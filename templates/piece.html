@@ -1,0 +1,78 @@
+{% set page_title = music.title %}
+{% extends "base.html" %}
+
+{% block head %}
+
+{{ super() }}
+<meta name="citation_title" content="{{music.uid}}" />
+<meta name="citation_author" content="{{music.authors}}" />
+<meta name="citation_publication_date" content="{{config.citation_date}}" />
+<meta name="citation_conference_title" content="{{config.tagline|striptags|title}}" />
+<meta name="citation_inbook_title" content="{{config.proceedings_title}}" />
+<meta name="citation_abstract" content="{{music.abstract}}"/>
+<meta id="yt-id" data-name="{{music.yt_id}}"/>
+<meta id="bb-id" data-name="{{music.bb_id}}"/>
+
+<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="vg3b6ih5d014szs"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="music-page-wrapper mt-3 mb-5">
+  <div class="page-header">
+    <div class="image-wrapper">
+      <img alt="{{music.authors}}" src="static/images/music_headshots/{{music.uid}}.jpg"/>
+    </div>
+    <div class="details">
+      <h1 class="mb-4">M{{music.position}}: {{music.title}}</h1>
+      <h4 style="color: rgba(0,0,0,.5);">{{music.authors}}</h4>
+      <h5 style="color: rgba(0,0,0,.5);">{{music.affiliation}}</h5>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center;" class="btn-toolbar mt-4" role="toolbar">
+    <div class="music-buttons btn-group btn-group-toggle mb-3" data-toggle="buttons">
+      <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#bio">
+        Bio
+      </button>
+      <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#abstract">
+        Abstract
+      </button>
+<!--      <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#video">-->
+<!--        Music-->
+<!--      </button>-->
+    </div>
+    {% if music.web_link %}
+    <div class="btn-group ml-3 mb-3">
+      <a href="{{music.web_link}}" class="btn btn-outline-primary">Website</a>
+    </div>
+    {% endif %}
+    {% if music.yt_id %}
+    <div class="btn-group ml-3 mb-3">
+      <a href="{{music.yt_id}}" class="btn btn-outline-primary" target="_blank">Music Video</a>
+    </div>
+    {% endif %}
+    <div class="btn-group ml-3 mb-3">
+      <a href="{{music.channel_url}}" class="btn btn-primary">{% include 'slack_svg.html' %} {{music.channel_name}}</a>
+    </div>
+
+  </div>
+
+  <div class="music-content-wrapper">
+    <div id="bio" class="pp-card mt-3 collapse">{{music.bio | markdown}}</div>
+    <div id="abstract" class="pp-card mt-3 collapse">{{music.abstract | markdown}}</div>
+<!--    <div id="video" class="pp-card mt-3 collapse">-->
+<!--        {% if music.yt_id %}-->
+<!--        <div style="padding:56.25% 0 0 0;position:relative;">-->
+<!--          <iframe src="{{music.yt_id}}" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen sandbox></iframe>-->
+<!--        </div>-->
+<!--        {% endif %}-->
+<!--    </div>-->
+  </div>
+
+</div>
+
+<script src="static/js/url_converter.js"></script>
+<script src="static/js/piece.js"></script>
+<script src="static/js/video_selection.js"></script>
+
+{% endblock %}

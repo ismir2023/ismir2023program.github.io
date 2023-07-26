@@ -1,0 +1,43 @@
+{% set page_title = jobs.title %}
+{% extends "base.html" %}
+
+{% block head %}
+
+{{ super() }}
+<meta name="citation_title" content="{{jobs.uid}}" />
+{% endblock %}
+
+{% block content %}
+
+<div class="jobs-page-wrapper mt-3 mb-5">
+  <div class="page-header">
+    <div class="details">
+      <h1 class="mb-4 text-center">{{jobs.title}}</h1>
+      <h4 class="text-center">{{jobs.company}}</h4>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center;" class="btn-toolbar mt-4" role="toolbar">
+    {% if jobs.channel_url %}
+    <div class="btn-group ml-3 mb-3">
+      <a href="{{jobs.channel_url}}" class="btn btn-primary">{% include 'slack_svg.html' %} {{jobs.channel_name}}</a>
+    </div>
+    {% endif %}
+
+    {% if jobs.external_web_link %}
+    <div class="btn-group ml-3 mb-3">
+      <a href="{{jobs.external_web_link}}" class="btn btn-outline-primary">Website</a>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="mt-3 ml-3 mr-3 mb-4 text-left card-subtitle">
+    {{jobs.jd | markdown}}
+  </div>
+</div>
+
+<script src="static/js/url_converter.js"></script>
+<script src="static/js/piece.js"></script>
+<script src="static/js/video_selection.js"></script>
+
+{% endblock %}

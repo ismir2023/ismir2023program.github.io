@@ -1,0 +1,68 @@
+{% set active_page = "Industry" %}
+{% set page_title = "Industry" %}
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".industry-info-modal">Large modal</button> -->
+
+<div style="display: flex; justify-content: center;" class="btn-toolbar" role="toolbar">
+  <div class="btn-group btn-group-toggle filter_option">
+    <label
+      class="btn btn-outline-secondary active"
+      data-tippy-content="Platinum Sponsors"
+    >
+      <input
+        type="radio"
+        name="options"
+        value="Platinum"
+        autocomplete="off"
+      />
+      Platinum Sponsors
+    </label>
+    <label
+      class="btn btn-outline-secondary active"
+      data-tippy-content="Gold Sponsors"
+    >
+      <input
+        type="radio"
+        name="options"
+        value="Gold"
+        autocomplete="off"
+      />
+      Gold Sponsors
+    </label>
+    <label
+      class="btn btn-outline-secondary active"
+      data-tippy-content="Silver Sponsors"
+    >
+      <input
+        type="radio"
+        name="options"
+        value="Silver"
+        autocomplete="off"
+      />
+      Silver Sponsors
+    </label>
+    <label
+      class="btn btn-outline-secondary"
+      data-tippy-content="All Sponsors"
+    >
+      <input type="radio" name="options" value="" autocomplete="off" />
+      All Sponsors
+    </label>
+  </div>
+</div>
+
+
+<div class="industry-cards row mt-3"></div>
+
+<script src="static/js/little_helpers.js"></script>
+<script src="static/js/industry.js"></script>
+<script>
+  $(document).ready(function () {
+    start();
+  });
+</script>
+
+{% endblock %}

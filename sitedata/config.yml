@@ -1,0 +1,77 @@
+# RELEASE CONTROL
+
+music_links: true
+poster_embeds: true
+paper_embeds: true
+paper_videos: true
+
+lbd_embeds: true
+
+browse_paper_buttons: 0  # 0: none, 1: show
+
+# Set to the current conference day
+
+paper_day_release: 3
+lbd_day_release: 4 # 0: none, 4: show
+
+# CHANNEL METADATA
+
+music_program_channel: '#music-program'
+music_program_url: ""
+
+
+name: ISMIR 2023
+tagline: ISMIR 2023 HYBRID CONFERENCE
+date: 5-9 November 2023
+citation_date: 5-9 November 2023
+proceedings_title: Proceedings of the First MiniCon Conference
+analytics: UA-
+logo:
+  image: 'static/images/ismir_tabicon.png'
+  width: 300px
+  height: auto
+# uncomment the following line to show the site title next to the logo image
+#site_title: 'ISMIR 2023'
+page_title:
+  prefix: 'ISMIR 2023'
+  separator: ': '
+background_image: 'static/images/Milano_ISMIR_complete_logo.png'
+organization: ISMIR Organization Committee
+
+# Remove or change to your chat server.
+#chat_server: miniconf.sloppy.zone
+#default_presentation_id: 38922815
+#default_poster_pdf: /static/images/GLTR_poster.pdf
+
+
+opening_ref_title_1: Opening Session
+opening_ref_title_2: Opening Session
+
+# Configuration for auth
+#Test user
+#user: miniconf@miniconf.com
+#pass: mIniconf1_
+
+use_auth0:
+auth0_client_id : JIdr6wi0z27LyLgwkJF0fpk700aj7MNH
+auth0_domain : miniconf.auth0.com
+
+calendar:
+  colors: #  Colors for the different event hashtags:
+    ---: '#bed972'
+    social: '#CB9E22'
+    awards: '#309764'
+    open: '#309764'
+    LBD: '#761F8D'
+    tut: '#C9431B'
+    all: '#309764'
+    pos: '#E67C73'
+    meet: '#2380BD'
+    vmeet: '#2380BD'
+    wimir: '#309764'
+    lunch: '#515151'
+    registration: '#515151'
+    mus: '#206A39'
+    industry: '#AF0704'
+    sat: '#7986CB'
+  sunday_saturday: false  #  Include Sunday and Saturday

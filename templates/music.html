@@ -1,0 +1,20 @@
+{% set active_page = "Music" %}
+{% set page_title = "Music" %}
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="music-cards row mt-3"></div>
+
+<script src="static/js/little_helpers.js"></script>
+ <script src="static/js/lazy_load.js"></script>
+ <script src="static/js/persistor.js"></script>
+<script src="static/js/music.js"></script>
+<script>
+  $(document).ready(function () {
+    start();
+  });
+</script>
+
+{% endblock %}

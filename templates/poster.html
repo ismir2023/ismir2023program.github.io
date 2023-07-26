@@ -1,0 +1,122 @@
+{% set page_title = paper.content.title %}
+{% extends "base.html" %}
+
+{% block head %}
+
+{{ super() }}
+<meta name="citation_title" content="{{paper.content.title}}" />
+{% for author in paper.content.authors %}
+<meta name="citation_author" content="{{author}}" />
+{% endfor %}
+<meta name="citation_publication_date" content="{{config.citation_date}}" />
+<meta name="citation_conference_title" content="{{config.tagline|striptags|title}}" />
+<meta name="citation_inbook_title" content="{{config.proceedings_title}}" />
+<meta name="citation_abstract" content="{{paper.content.abstract}}" />
+{% for keyword in paper.content.keywords %}
+<meta name="citation_keywords" content="{{keyword}}" />
+{% endfor %}
+<meta name="citation_pdf_url" content="{{paper.content.uid | default("")}}" />
+<meta id="yt-id" data-name={{paper.content.yt_id}} />
+<meta id="bb-id" data-name={{paper.content.bb_id}} />
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Title -->
+<div class="pp-card m-3" style="">
+  <div class="card-header">
+    <h2 class="card-title main-title text-center" style="">
+      P{{paper.session}}-{{paper.position}}: {{paper.content.title}}
+    </h2>
+    <h3 class="card-subtitle mb-2 text-muted text-center">
+      {% for author in paper.content.authors %}
+      <a href="papers.html?filter=authors&search={{author}}" class="text-muted"
+        >{{author}}</a
+      >{{ "," if not loop.last }}
+      {% endfor %}
+    </h3>
+    <p class="card-text text-center">
+      <span class="">Subjects (starting with primary):</span>
+      {% for keyword in paper.content.keywords %}
+      <a
+        href="papers.html?filter=keywords&search={{keyword}}"
+        class="text-secondary text-decoration-none"
+        >{{keyword}}</a
+      > {{ "; " if not loop.last }}
+      {% endfor %}
+    </p>
+    <h4 class="text-muted text-center">
+      Presented {{paper.content.paper_presentation}}:
+      {% if paper.content.long_presentation == 'True' %}
+        10-minute long-format presentation
+      {% else %}
+        4-minute short-format presentation
+      {% endif %}
+    </h4>
+
+  </div>
+</div>
+<div style="display: flex; justify-content: center;" class="btn-toolbar mt-4" role="toolbar">
+  <div class="poster-buttons btn-group btn-group-toggle mb-3" data-toggle="buttons">
+    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#details">
+      Abstract
+    </button>
+    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#paper">
+      Paper
+    </button>
+    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#poster">
+      Poster
+    </button>
+    <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#video">
+      Video
+    </button>
+    <!-- {% if paper.content.code != blank %}
+    <a href="{{paper.content.code}}" target="_blank" class="card-link">
+      Code
+    </a>
+    {% endif %} -->
+  </div>
+  {% if paper.content.channel_url %}
+    <div class="btn-group ml-3 mb-3">
+      <a href="{{paper.content.channel_url}}" class="btn btn-primary">{% include 'slack_svg.html' %} {{paper.content.slack_channel}}</a>
+    </div>
+  {% endif %}
+</div>
+<div class="poster-content">
+  <div id="details" class="pp-card m-3 collapse">
+    <div class="card-body">
+      <div class="card-text">
+        <div id="abstractExample">
+          <span class="font-weight-bold">Abstract:</span>
+          {{paper.content.abstract | markdown}}
+        </div>
+      </div>
+      <p></p>
+    </div>
+  </div>
+  <div id="paper" class="collapse">
+    {% if config.paper_embeds %}
+    <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
+    <iframe class="fullscreen-iframe" src = "{{ paper.content.pdf_path }}#embedded=true" width='100%' height='500px' allowfullscreen webkitallowfullscreen></iframe>
+    {% endif %}
+  </div>
+  <div id="poster" class="collapse">
+    {% if config.poster_embeds %}
+    <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
+    <iframe class="fullscreen-iframe" src = "static/posters/{{ paper.id }}.pdf#embedded=true" width='100%' height='500px' allowfullscreen webkitallowfullscreen></iframe>
+    {% endif %}
+  </div>
+  <div id="video" class="collapse">
+    {% if config.paper_videos %}
+      <div  style="display: flex; justify-content: center;">
+      <iframe src="{{paper.content.video}}" width="640" height="480" sandbox></iframe>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+
+<script src="static/js/poster.js"></script>
+<script src="static/js/video_selection.js"></script>
+{% endblock %}

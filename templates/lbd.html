@@ -1,0 +1,103 @@
+{% set page_title = lbd.content.title %}
+{% extends "base.html" %}
+
+{% block head %}
+
+{{ super() }}
+<meta name="citation_title" content="{{lbd.content.title}}" />
+{% for author in lbd.content.authors %}
+<meta name="citation_author" content="{{author}}" />
+{% endfor %}
+<meta name="citation_publication_date" content="{{config.citation_date}}" />
+<meta name="citation_conference_title" content="{{config.tagline|striptags|title}}" />
+<meta name="citation_inbook_title" content="{{config.proceedings_title}}" />
+<meta name="citation_abstract" content="{{lbd.content.abstract}}" />
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Title -->
+<div class="pp-card m-3" style="">
+  <div class="card-header">
+    <h2 class="card-title main-title text-center" style="">
+      L{{lbd.content.session[0][0]}}-{{lbd.position}}: {{lbd.content.title}}
+    </h2>
+    <h3 class="card-subtitle mb-2 text-muted text-center">
+      {% for author in lbd.content.authors %}
+      {{author}}{{ "," if not loop.last }}
+      {% endfor %}
+    </h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 text-center">
+    <div class="lbd-buttons btn-group btn-group-toggle mb-3" data-toggle="buttons">
+      <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#details">
+        Abstract
+      </button>
+      <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#paper">
+        Paper
+      </button>
+      {% if lbd.content.poster_link %}
+      <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#poster">
+        Poster
+      </button>
+      {% endif %}
+
+      {% if lbd.content.youtube_id or lbd.content.bilibili_id %}
+      <button class="card-link btn btn-outline-primary" data-toggle="collapse" type="button" data-target="#video">
+        Video
+      </button>
+      {% endif %}
+    </div>
+    {% if lbd.content.channel_url and config.lbd_day_release >= lbd.content.day | int %}
+    <div class="btn-group ml-3 mb-3">
+      <a href="{{lbd.content.channel_url}}" class="btn btn-primary">{% include 'slack_svg.html' %} {{lbd.content.channel_name}}</a>
+    </div>
+  {% endif %}
+  </div>
+</div>
+<div class="poster-content">
+  <div id="details" class="pp-card m-3 collapse">
+    <div class="card-body">
+      <div class="card-text">
+        <div id="abstractExample">
+          <span class="font-weight-bold">Abstract:</span>
+          {{lbd.content.abstract}}
+        </div>
+      </div>
+      <p></p>
+    </div>
+  </div>
+  <div id="paper" class="collapse">
+    <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
+    <iframe class="fullscreen-iframe" src="{{lbd.content.paper_link}}" width='100%' height='500px' allowfullscreen webkitallowfullscreen></iframe>
+
+  </div>
+  <div id="poster" class="collapse">
+    <button class="fullscreen-button btn btn-primary mb-3">Fullscreen</button>
+    <iframe class="fullscreen-iframe" src="{{lbd.content.poster_link}}" width='100%' height='500px' allowfullscreen webkitallowfullscreen></iframe>
+  </div>
+  {% if lbd.content.youtube_id or lbd.content.bilibili_id %}
+  <div id="video" class="collapse">
+    {% if lbd.content.youtube_id %}
+    <div  style="display: flex; justify-content: center;">
+      <iframe src="{{lbd.content.youtube_id}}" width="640" height="480" sandbox></iframe>
+    </div>
+    <br/>
+    {% endif %}
+
+    {% if lbd.content.bilibili_id %}
+    <div style="padding:56.25% 0 0 0;position:relative;">
+      <iframe src="//player.bilibili.com/player.html?bvid={{lbd.content.bilibili_id}}&page=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allowfullscreen> </iframe>
+    </div>
+    {% endif %}
+
+  </div>
+  {% endif %}
+</div>
+
+<script src="static/js/lbd.js"></script>
+
+{% endblock %}

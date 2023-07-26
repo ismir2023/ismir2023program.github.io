@@ -1,0 +1,19 @@
+{% set active_page = "Jobs" %}
+{% set page_title = "Jobs" %}
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="jobs-cards row mt-3"></div>
+<script src="static/js/little_helpers.js"></script>
+<script src="static/js/lazy_load.js"></script>
+<script src="static/js/persistor.js"></script>
+<script src="static/js/jobs.js"></script>
+<script>
+  $(document).ready(function () {
+    start();
+  });
+</script>
+
+{% endblock %}

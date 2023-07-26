@@ -1,0 +1,41 @@
+{% set active_page = "Tutorials" %}
+{% set page_title = "Tutorials" %}
+{% extends "base.html" %}
+<!--  ("day_1.html", "December 4th", "day_1-html"),-->
+{% block tabs %}
+{{ components.navtabs([
+  ("calendar.html", "Calendar", "calendar-html"),
+  ("tutorials.html", "Dec-4", "tutorials-html"),
+  ("day_2.html", "Dec-5", "day_2-html"),
+  ("day_3.html", "Dec-6", "day_3-html"),
+  ("day_4.html", "Dec-7", "day_4-html"),
+  ("day_5.html", "Dec-8", "day_5-html"),
+  ])
+}}
+{% endblock %}
+
+
+{% block content %}
+<!--{% if request.args.get('tz') %}-->
+<!--  {% set tzone = request.args.get('tz') %}-->
+<!--argument: {{tzone}}-->
+<!--{% else %}-->
+<!--  {% set tzone = '' | localcheck %}-->
+<!--localcheck: {{tzone}}-->
+<!--{% endif %}-->
+<!--finalchosen: {{tzone}}-->
+{% set tzone = 'Asia/Calcutta' %}
+<div class="tab-content px-3 px-sm-0" id="nav-tabContent">
+  <div id="day">
+    <!-- Workshops -->
+<!--    <h2 style="text-align: center;">Tutorials</h2>-->
+    {{ components.subsection_tag("Tutorial", "tut") }}
+
+    <div class="speakers">
+      {{ components.tutorialscard(tutorials, tzone, tut_md) }}
+    </div>
+  </div>
+</div>
+<script src="static/js/schedule_nav.js"></script>
+<script src="static/js/anchor_offset.js"></script>
+{% endblock %}
