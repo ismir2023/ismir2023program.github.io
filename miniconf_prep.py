@@ -101,7 +101,7 @@ if __name__ == "__main__":
         setupTutorials(os.path.join(data_path, "events.csv"), os.path.join(data_path, "__23rd_International_Society_for_Music_Information_Retrieval_Conference_(ISMIR_2022)__Registration_Data.csv"))
 
     elif (action == "setup-papers"):
-        setupPapers(os.path.join(data_path, "papers.csv"))
+        setupPapers(os.path.join(data_path, "papers_debug.csv"))
 
     elif (action == "setup-lbd"):
         setupLbds(os.path.join(data_path, "lbds.csv"))
