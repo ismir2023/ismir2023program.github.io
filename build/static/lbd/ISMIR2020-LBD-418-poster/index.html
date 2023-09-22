@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Olaf - Overly Fast Acoustic Fingerprinting</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<style type="text/css">
+		.ugent {
+    			
+    		}
+    		section{
+    			height: 100%;
+    			background: url( '/media/ugent-logo.svg' );
+        		background-size: 223px 107px;
+        		background-repeat: no-repeat;
+        		background-position-x: -50px;
+        		background-position-y: calc(100% - 130px);
+    		}
+		</style>
+
+		<!-- Theme used for syntax highlighted code -->
+		<!-- <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme"> -->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<div  style="background-color: #1E64C8; height:90%;width: 100%;color:white;">
+						<br/>
+						<br/>
+						<h3 style="color:white;">Olaf: Overly Fast Acoustic Fingerprinting</h3>
+
+						<br/>
+						ISMIR 2020 LBD - Dynamic Poster
+						<br/>
+
+						<br/>
+						<small>September 2020 - IPEM - Ghent University - Belgium</small><br/>
+						<small>joren.six@ugent.be</small>
+					</div>
+				</section>
+
+				<section>
+					<h3>Olaf: Overly Fast Acoustic Fingerprinting</h3>
+					<p style="text-align: left;">
+					Olaf is a landmark based <em>acoustic fingerprinting system</em>. It stands out for three reasons: Olaf is...
+					</p>
+					<ol>
+						<li class="fragment">designed for <b>embedded</b> platforms</li>
+						<li class="fragment"><b>fast</b> on traditional computers</li>
+						<li class="fragment">runs in the <b>browser</b></li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Olaf on embedded devices</h3>
+
+					<div style="width:100%;height:75%;display:grid;grid-template-columns: 1fr 1fr;gap: 2rem 2rem">
+						<video data-autoplay style="height:80%;justify-self:end" src="media/embedded_demo.webm" type="video/webm; codecs=vp9,opus">
+						</video>
+
+					<div style="position:relative;height:4rem;">
+						<p style="position:absolute;top:0;" class="fragment fade-in-then-out"></p>
+						<p style="position:absolute;top:0;" class="fragment fade-in-then-out">Here Olaf runs on an ESP32 microcontroller.</p>
+						<p style="position:absolute;top:0;" class="fragment fade-in-then-out">The microcontroller is embedded in a smart costume and is battery powered. </p>
+						<p style="position:absolute;top:0;" class="fragment fade-in-then-out">Lights in the costume only react to a single, preditermined song.</p>
+						<p style="position:absolute;top:0;" class="fragment fade-in-then-out">Only when that song is played: the costume lights up.</p>
+						<p style="position:absolute;top:0;" class="fragment fade-in-then-out">When the music stops, the match is kept for a while to support interruptions.</p>
+						<p style="position:absolute;top:0;" class="fragment fade-in-then-out">After a while the lights stop...</p>
+						<p style="position:absolute;top:0;" class="fragment fade-in-then-out">....until the song starts again.</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>Olaf on traditional computers</h3>
+					<p >Olaf has a CLI interface to store and query audio. <br>Audio is processed at speeds over 1000xrealtime.<br>
+					<img style="width:80%" src="media/olaf_interaction.svg"/>
+				</section>
+
+				<section>
+					<h3>Olaf in the browser</h3>
+					<ul>
+					<li>
+					Olaf is programmed in <b>ANSI C</b>.
+					</li>
+					<li class="fragment fade-in">
+					Emscripten is able to compile <b>ANSI C to WASM</b>. This enables Olaf to run in the browser.
+					</li>
+					<li class="fragment fade-in">
+					The <b>Web Audio API</b> allows to capture microphone input.
+					</li>
+					</ul>
+				</section>
+	
+				<section>
+					<h3>Olaf in the browser</h3>			
+					<video id="letigo" data-autoplay style="width:100%" src="media/olaf_in_browser_demo.mp4" ></video>
+				</section>
+
+				<section>
+					<h3>Olaf in the browser - Live</h3>
+					<div style="margin-top:1rem;margin-bottom:1rem;width:100%;display:grid;grid-template-columns: 1fr 1fr;gap: 0.5rem 0.5rem">
+						<div style="padding-top:1rem;background-image: url('media/frame_chrome_mac_light.png');background-size: 100% 100%;background-repeat: no-repeat;">
+							<iframe style="margin-top:50px;margin-left:3px;margin-right:auto;width:90%;height:12rem;border:none;padding-bottom:5px;" src="media/iframe/spectrogram.html"></iframe>
+						</div>
+						<iframe style="width:100%;margin-top:50px;height:12rem;border:none" src="https://www.youtube.com/embed/moSFlvxnbgk" allow=""></iframe>		
+					</div>
+					<small>This demo requires access to the <b>microphone and WebGL</b>. It also needs to run from a server. Either use the <a href="https://0110.be/attachment/presentations/2020.10.OLAF-ISMIR-Ghent/#/6">hosted version</a> or self-host.</small>
+				</section>
+
+				<section>
+					<h3>Olaf: Overly Fast Acoustic Fingerprinting</h3>
+					More info:<br>
+					
+					<a href="media/ISMIR2020_LBD_Olaf.pdf">ISMIR LBD Abstract</a> | 
+					<a href="https://github.com/JorenSix/Olaf">GitHub Repository</a> <br><br>
+
+					Olaf on:<br>
+					<a href="https://0110.be/posts/Olaf_-_Acoustic_fingerprinting_on_the_ESP32_and_in_the_Browser">My Blog</a> |
+					<a href="https://hackaday.com/2020/08/30/olaf-lets-an-esp32-listen-to-the-music/">HACKADAY</a> | 
+					<a href="https://news.ycombinator.com/item?id=24292817">Hacker News</a>
+				</section>
+
+				<section>
+					<div  style="background-color: #1E64C8; height:90%;width: 100%;color:white;">
+						<br/>
+						<br/>
+						<h3 style="color:white;">Olaf: Overly Fast Acoustic Fingerprinting</h3>
+						<br/>
+						ISMIR 2020 LBD - Dynamic Poster
+						<br/>
+
+						<br/>
+						<small>September 2020 - IPEM - Ghent - Belgium</small><br/>
+						<small>joren.six@ugent.be</small>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<!-- <script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script> -->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				//plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				//autoSlide: 5000,
+			});
+
+			Reveal.addKeyBinding( 80, () => {
+  				//p to start video
+  				document.getElementById("letigo").play();
+			} )
+
+			Reveal.addKeyBinding( 79, () => {
+  				//o to stop video
+  				document.getElementById("letigo").pause();
+			} )
+
+		</script>
+	</body>
+</html>

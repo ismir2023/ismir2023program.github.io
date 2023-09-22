@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://soonbeomchoi.github.io/CSD-Blog/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>CSD: Children’s Song Dataset for Singing Voice Research | Music and Audio Computing Lab, KAIST</title>
+<meta name="generator" content="Jekyll v3.9.0">
+<meta property="og:title" content="CSD: Children’s Song Dataset for Singing Voice Research">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Music and Audio Computing Lab, KAIST">
+<meta property="og:description" content="Music and Audio Computing Lab, KAIST">
+<link rel="canonical" href="https://soonbeomchoi.github.io/CSD-Blog/">
+<meta property="og:url" content="https://soonbeomchoi.github.io/CSD-Blog/">
+<meta property="og:site_name" content="CSD: Children’s Song Dataset for Singing Voice Research">
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"CSD: Children’s Song Dataset for Singing Voice Research","url":"https://soonbeomchoi.github.io/CSD-Blog/","description":"Music and Audio Computing Lab, KAIST","name":"CSD: Children’s Song Dataset for Singing Voice Research","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a id="skip-to-content" href="https://soonbeomchoi.github.io/CSD-Blog/#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">CSD: Children's Song Dataset for Singing Voice Research</h1>
+      <h2 class="project-tagline">Music and Audio Computing Lab, KAIST</h2>
+      <a href="https://soonbeomchoi.github.io/CSD-Blog/" class="btn">Official Page Link</a>
+      
+        <a href="https://github.com/emotiontts/emotiontts_open_db/tree/master/CSD" class="btn">CSD Dataset Link</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <script>
+function pauseOthers(ele) {
+    $("audio").not(ele).each(function (index, audio) {audio.pause();});
+}
+</script>
+
+<style>
+.main-content table {
+    display: inline-table;
+}
+table {
+    table-layout: auto;
+    width: 100%;
+    overflow: hidden;
+}
+#player{
+    width: 100%;
+}
+</style>
+
+<p><img src="95196354-e20f0200-0812-11eb-91c3-f53f8d79a535.png" alt="Singing-05"></p>
+
+<h2 id="overview">Overview</h2>
+<p align="justify">
+We introduce the Children's Song Dataset (CSD) which contains vocal recordings of 100 children's songs in Korean or English. The audio recordings are precisely aligned with the MIDI transcriptions and lyrics annotations and so we expect that the dataset can be useful for various singing voice analysis and synthesis tasks. 
+</p>
+
+<h2 id="dataset-contents">Dataset Contents</h2>
+<p align="justify">
+The dataset is composed of 50 Korean and 50 English songs sung by a Korean female professional pop singer. Each song is recorded in two separate keys, ranging from 3 to 5 semitones, resulting in a total of 200 audio recordings. We collected the children's songs to avoid the possible copyright issues in commercial pop music Each audio recording is paired with a MIDI transcription file and a lyrics annotation file.
+</p>
+
+<table>
+  <tbody><tr>
+    <th align="left"> Lanauge (number of songs) </th>
+    <td align="left"> Korean (50), English (50) </td>
+  </tr>
+  <tr>
+    <th align="left"> Number of keys per song </th>
+    <td align="left"> 2 </td>
+  </tr>
+  <tr>
+    <th align="left"> Pitch range </th>
+    <td align="left"> F3 - F5 </td>
+  </tr>
+  <tr>
+    <th align="left"> Audio </th>
+    <td align="left"> 44.1Hz, 16bit in Wav format </td>
+  </tr>
+  <tr>
+    <th align="left"> MIDI </th>
+    <td align="left"> Monophonic MIDI without any expressions </td>
+  </tr>
+  <tr>
+    <th align="left"> Lyrics </th>
+    <td align="left"> Grapheme level annoation in a plain TXT format </td>
+  </tr>
+</tbody></table>
+<p align="center">Table.1 The summary of CSD dataset.</p>
+
+<h2 id="midi-and-lyric-annotation">MIDI and Lyric Annotation</h2>
+<p align="justify">
+The MIDI data consists of monophonic notes. Each note contains onset and offset times which were manually fine-tuned along with the corresponding syllable. We annotated the note onset and duration with consistent guide lines throught various expressions and a MIDI note do not include any expression data or control change messages.
+</p>
+<p><br></p>
+<p align="justify">
+Lyrics are annotated in grapheme level with a plain text format. Each syllable matches with one note and when a syllable corresponds to multiple notes, it is replicated.
+</p>
+
+<h2 id="samples">Samples</h2>
+<p align="justify">
+CSD dataset is recorded in both English and Korean. Some songs are recorded in both Korean and English and they have same meanings. Those samples are shown as below.
+</p>
+
+<table style="table-layout: fixed;">
+    <tbody><tr>
+        <th> Song </th>
+        <th> English </th>
+        <th> Korean </th>
+    </tr>
+    <tr>
+        <th> Twinkle Twinkle <br> Little Star <br> 작은 별 </th> 
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/little_star_en.mp3" type="audio/mpeg"></audio></th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/little_star_kr.mp3" type="audio/mpeg"></audio></th>
+    </tr>
+    <tr>
+        <th> Bingo <br> 빙고 </th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/bingo_en.mp3" type="audio/mpeg"></audio></th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/bingo_kr.mp3" type="audio/mpeg"></audio></th>
+    </tr>
+    <tr>
+        <th> Rudolph the Red <br> Nosed Reindeer <br> 루돌프 </th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/rudolph_en.mp3" type="audio/mpeg"></audio></th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/rudolph_kr.mp3" type="audio/mpeg"></audio></th>
+    </tr>
+    <tr>
+        <th> O Holy Night <br> 오 거룩한 밤 </th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/holynight_en.mp3" type="audio/mpeg"></audio></th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/holynight_kr.mp3" type="audio/mpeg"></audio></th>
+    </tr>
+    <tr>
+        <th> White Christmas <br> 화이트 크리스마스 </th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/white_xmas_en.mp3" type="audio/mpeg"></audio></th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/white_xmas_kr.mp3" type="audio/mpeg"></audio></th>
+    </tr>
+    <tr>
+        <th> Butterfly <br> 나비야 </th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/butterfly_en.mp3" type="audio/mpeg"></audio></th>
+        <th> <audio controls="" id="player" onplay="pauseOthers(this);"><source src="assets/audio/butterfly_kr.mp3" type="audio/mpeg"></audio></th>
+    </tr>
+</tbody></table>
+
+
+    </main>
+  
+
+<div class="betternet-wrapper"></div></body><whale-quicksearch translate="no"></whale-quicksearch></html>
