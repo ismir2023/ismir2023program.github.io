@@ -31,9 +31,9 @@ def calendar_csv2ics(in_csv='../miniconf-data/sitedata/events.csv', out_ics='sta
         }
 
     cal = Calendar()
-    cal.add('prodid', 'ISMIR 2022 calendar')
+    cal.add('prodid', 'ISMIR 2023 calendar')
     cal.add('version', '2.0')
-    cal['dtstart'] = datetime(2022,12,4,8,0,0,tzinfo=pytz.timezone('Asia/Kolkata'))
+    cal['dtstart'] = datetime(2023,11,5,9,0,0,tzinfo=pytz.timezone('Europe/Berlin'))
 
     tut_csv = orig_csv.copy()[orig_csv['category'].isin(["Tutorials"])]
     tut_csv = tut_csv.sort_values(by=['title'])
@@ -44,7 +44,7 @@ def calendar_csv2ics(in_csv='../miniconf-data/sitedata/events.csv', out_ics='sta
         e_start_time = [int(x) for x in event['start_time'].split(':')]
         e_end_time = [int(x) for x in event['end_time'].split(':')]
         e_cal.add('uid', int(event['uid']) + 10)
-        e_cal.add('dtstamp', datetime(2022,12,4,0,0,0,tzinfo=pytz.timezone('Asia/Kolkata')))
+        e_cal.add('dtstamp', datetime(2023,11,5,0,0,0,tzinfo=pytz.timezone('Europe/Berlin')))
 
         if event['category'] == "Poster session":
             session_num = event['title'].split()[3]
