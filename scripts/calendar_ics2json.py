@@ -3,7 +3,7 @@ import requests
 from ics.icalendar import Calendar
 
 
-def calendar_ics2json(in_ics="static/calendar/ISMIR_2022.ics", out_json="sitedata/main_calendar.json"):
+def calendar_ics2json(in_ics, out_json):
     if not in_ics.startswith("http"):
         with open(in_ics, "r") as f:
             c = Calendar(f.read())
@@ -40,4 +40,6 @@ def calendar_ics2json(in_ics="static/calendar/ISMIR_2022.ics", out_json="sitedat
 
 
 if __name__ == "__main__":
-    calendar_ics2json()
+    calendar_ics2json(
+        in_ics="/Users/claraborrelli/Repos/miniconf/ismir2023program.github.io/static/calendar/ISMIR_2023.ics",
+        out_json="/Users/claraborrelli/Repos/miniconf/ismir2023program.github.io/sitedata/main_calendar.json")
