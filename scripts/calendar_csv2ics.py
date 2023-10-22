@@ -8,7 +8,7 @@ def display(cal):
     return cal.to_ical().replace('\r\n', '\n').strip()
 
 
-def calendar_csv2ics(in_csv='../miniconf-data/sitedata/events.csv', out_ics='static/calendar/ISMIR_2022.ics'):
+def calendar_csv2ics(in_csv, out_ics):
     orig_csv = pd.read_csv(in_csv)
     orig_csv = orig_csv.sort_values(by=['uid'])
 
@@ -33,7 +33,7 @@ def calendar_csv2ics(in_csv='../miniconf-data/sitedata/events.csv', out_ics='sta
     cal = Calendar()
     cal.add('prodid', 'ISMIR 2023 calendar')
     cal.add('version', '2.0')
-    cal['dtstart'] = datetime(2023,11,5,9,0,0,tzinfo=pytz.timezone('Europe/Berlin'))
+    cal['dtstart'] = datetime(2023,11,5,9,0,0,tzinfo=pytz.timezone('Europe/Rome'))
 
     tut_csv = orig_csv.copy()[orig_csv['category'].isin(["Tutorials"])]
     tut_csv = tut_csv.sort_values(by=['title'])
@@ -44,7 +44,7 @@ def calendar_csv2ics(in_csv='../miniconf-data/sitedata/events.csv', out_ics='sta
         e_start_time = [int(x) for x in event['start_time'].split(':')]
         e_end_time = [int(x) for x in event['end_time'].split(':')]
         e_cal.add('uid', int(event['uid']) + 10)
-        e_cal.add('dtstamp', datetime(2023,11,5,0,0,0,tzinfo=pytz.timezone('Europe/Berlin')))
+        e_cal.add('dtstamp', datetime(2023,11,4,0,0,0,tzinfo=pytz.timezone('Europe/Rome')))
 
         if event['category'] == "Poster session":
             session_num = event['title'].split()[3]
@@ -71,13 +71,13 @@ def calendar_csv2ics(in_csv='../miniconf-data/sitedata/events.csv', out_ics='sta
 
         e_cal.add('summary', "#" + color_dict[event['category']] + ' ' + event['title'])
         e_cal.add('dtstart', datetime(e_date[0], e_date[1], e_date[2],
-            e_start_time[0], e_start_time[1], 0, tzinfo=pytz.timezone('Asia/Kolkata')))
+            e_start_time[0], e_start_time[1], 0, tzinfo=pytz.timezone('Europe/Rome')))
         if e_end_time[0] < e_start_time[0]:
             e_cal.add('dtend', datetime(e_date[0], e_date[1], e_date[2] + 1,
-                e_end_time[0], e_end_time[1], 0, tzinfo=pytz.timezone('Asia/Kolkata')))
+                e_end_time[0], e_end_time[1], 0, tzinfo=pytz.timezone('Europe/Rome')))
         else:
             e_cal.add('dtend', datetime(e_date[0], e_date[1], e_date[2],
-                e_end_time[0], e_end_time[1], 0, tzinfo=pytz.timezone('Asia/Kolkata')))
+                e_end_time[0], e_end_time[1], 0, tzinfo=pytz.timezone('Europe/Rome')))
 
         cal.add_component(e_cal)
 
@@ -87,4 +87,6 @@ def calendar_csv2ics(in_csv='../miniconf-data/sitedata/events.csv', out_ics='sta
 
 
 if __name__ == "__main__":
-    calendar_csv2ics()
+    calendar_csv2ics(
+        in_csv='/Users/claraborrelli/Repos/miniconf/ismir2023program.github.io/sitedata/events.csv',
+        out_ics='/Users/claraborrelli/Repos/miniconf/ismir2023program.github.io/static/calendar/ISMIR_2023.ics')

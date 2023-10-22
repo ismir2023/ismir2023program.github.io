@@ -227,7 +227,7 @@ def topics():
 @app.route("/getCalendar")
 def get_calendar():
     filepath = 'static/calendar/'
-    filename = 'ISMIR_2022.ics'
+    filename = 'ISMIR_2023.ics'
     return send_file(os.path.join(filepath, filename), as_attachment=True)
 
 def extract_list_field(v, key):
