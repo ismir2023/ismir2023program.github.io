@@ -1,9 +1,9 @@
 uid,title,session,registered_emails,abstract,pdf,video,video2,company,channel_name,channel_url,external_web_link,type
 moises,Moises,Platinum,igor@moises.ai,,,https://www.youtube.com/embed/Elv6p9_MRWg?si=V5-5KLxgu7E_yJVw,https://www.youtube.com/embed/JYTK4o5H9FE?si=1PBYvAQiZSaefM9X,Moises,,,https://developer.moises.ai,Booth + communication channel
-yamaha,Yamaha,Gold,yuta.kusaka@music.yamaha.com,,,,,Yamaha,,,https://www.yamaha.com/en/,Booth + communication channel
+yamaha,Yamaha,Gold,yuta.kusaka@music.yamaha.com,,yamaha.pdf,https://drive.google.com/file/d/1c-epNT0Yo3oIsMYYVKSXLkJ23ooNAo0J/preview,,Yamaha,,,https://www.yamaha.com/en/,Booth + communication channel
 algoriddim,Algoriddim,Gold,sponsor_email,,,,,Algoriddm,,,,Booth + communication channel
 musixmatch,Musixmatch,Gold,francesca.galli@musixmatch.com, [Musixmatch Blog](https://medium.com/musixmatch-blog/tagged/ai),,https://www.youtube.com/embed/CToVgoH2YhU?si=diu0UwWq4cLVe0ez,,Musixmatch,,,https://www.musixmatch.com/it,Booth + communication channel
-deezer,Deezer,Gold,sponsor_email,,https://hal.science/hal-03669865/document,,,Deezer,,,https://research.deezer.com,Booth + communication channel
+deezer,Deezer,Gold,sponsor_email,,deezer.pdf,,,Deezer,,,https://research.deezer.com,Booth + communication channel
 adobe,Adobe,Gold,sponsor_email,,,https://www.youtube.com/embed/c1lzncIhoaU?si=aW7dCckZPwclLzfF,,Adobe,,,https://research.adobe.com/,Booth + communication channel
 umusic,UMUSIC,Gold,sponsor_email,,,,,UMUSIC,,,,Booth + communication channel
 google,Google,Gold,chrisdonahue@google.com,<ul><b>Careers</b> <li><a href="#">https://research.google/careers/</a></li><li><a href="#">https://www.deepmind.com/careers</a></li></ul>,,,,Google,,,https://research.google,Booth + communication channel
