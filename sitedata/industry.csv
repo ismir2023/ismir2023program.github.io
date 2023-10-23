@@ -1,20 +1,12 @@
 uid,title,session,registered_emails,abstract,pdf,video,video2,company,channel_name,channel_url,external_web_link,type
-adobe,Audio AI for Human Centered Creativity,Gold,mewong@adobe.com,,adobe.pdf,,,Adobe,adobe-sponsor,https://slack.com/app_redirect?channel=C04CMR5CWTE,https://www.adobe.com/,Booth + communication channel
-chordify,Chordify,Gold,dion@chordify.net,,https://drive.google.com/file/d/13npetVtLxwwRZ6TLNNk5_FVHhDneueT1/view?usp=share_link,,,Chordify,chordify-sponsor,https://slack.com/app_redirect?channel=C04CKBKBDMG,https://chordify.net/,Booth + communication channel
-deezer,Deezer Research: Exploring music at scale,Gold,manuel.moussallam@deezer.com,,deezer.pdf,,,Deezer,deezer-sponsor,https://slack.com/app_redirect?channel=C04CCPD09E2,https://www.deezer.com/soon,Booth + communication channel
-indsca,IndSCA,Gold,,"Indian Speech Communication Association or IndSCA is a community/committee formed with distinguished faculty members from different institutions of India. With boosting speech, language and audio research activity in India as one of the major objectives, IndSCA is the pioneer committee in above mentioned subjects in the country. It also offers student travel grants to major international speech conference such as NIPS, ICML, Interspeech, ICASSP.
-
-Please check our website for more details.",,,,IndSCA,indsca-sponsor,https://slack.com/app_redirect?channel=C04CCPD77L6,https://indsca.web.app/,
-moises,Moises – The Musician's Platform,Platinum,jardson@moises.ai,,https://drive.google.com/file/d/1IpctxoZoCm2YtSLPN_kctfGoQSf8JZet/view?usp=share_link,https://drive.google.com/file/d/1CdaNMhkDaXa7vSPghbgEumnpNXztVC13/preview,https://drive.google.com/file/d/185EWp4txeZNJL576MGuscBi_ymBmI7_C/preview,Moises,moises-sponsor,https://slack.com/app_redirect?channel=C04CY0Y3WSD,https://moises.ai/,Booth + communication channel
-sirius,MIR and Music Recommendation Research at SiriusXM / Pandora,Gold,fgouyon@pandora.com,,sirius.pdf,https://www.youtube.com/embed/k5_HXG81vUo,,SiriusXM/Pandora,siriusxm-pandora-sponsor,https://slack.com/app_redirect?channel=C04CKBK89K4,https://www.siriusxm.com/pandora,Booth + communication channel
-smule,"Smule – The Social Singing App
-Sing millions of songs and make friends through music",Gold,gergana.ivanova@smule.com,,https://drive.google.com/file/d/13xHzIAmTy3nmvGiCxtHEuiQqy3MVg3Yp/view?usp=share_link,https://drive.google.com/file/d/1j8fdTaNtfNPHes191_behGJfJ1hXRg_z/preview,,Smule,smule-sponsor,https://slack.com/app_redirect?channel=C04CKBK92E6,https://www.smule.com/,Booth + communication channel
-spotify,Spotify,Platinum,janv@spotify.com,,spotify.pdf,https://www.youtube.com/embed/M7LQYW6DCb0,,Spotify,spotify-sponsor,https://slack.com/app_redirect?channel=C04CMR5C51S,https://research.atspotify.com/,Booth + communication channel
-steinberg,Steinberg: Creativity First,Silver,JB.Rolland@steinberg.de,"Steinberg has been providing award-winning, technologically advanced music and media production products for musicians and producers of music, video and film since 1984. Today, Steinberg is one of the world's largest manufacturers of music and audio software and hardware, with millions of users worldwide. The Steinberg range of products has long since found world renown in all aspects of modern digital audio processing. They form the backbone of facilities specializing in music composition and production, mastering, restoration, sound design and audio post for the music, game and film industries.
-
-Since January 2005, Steinberg is a wholly owned subsidiary of Yamaha Corporation, the world's leading manufacturer of audio hardware.
-
-For additional information, visit [our website](https://www.steinberg.net) or contact us at [press@steinberg.net](press@steinberg.net)",,https://www.youtube.com/embed/nc8I36RI4Y4,,Steinberg Media Technologies GmbH,,,https://www.steinberg.net/,Booth only
-tiktok,TikTok,Gold,,,,,,ByteDance,tiktok-sponsor,https://ismir2022program.slack.com/archives/C04CLCBN6GK,https://www.bytedance.com/en/,Booth + communication channel
-utopia,Music Analysis and Data Science at Utopia,Gold,anna.lachmayr@utopiamusic.com,,https://drive.google.com/file/d/1bj-v_RC_1SFIFLu1Mo_TXQMR5fbDtRfE/view?usp=share_link,https://drive.google.com/file/d/1KkgUZ8W4isdIfPHx78st9i3n5Bv9eSvs/preview,,Utopia Music,utopia-sponsor,https://slack.com/app_redirect?channel=C04CMR5ELF6,https://utopiamusic.com/,Booth + communication channel
-yamaha,Enhancing Music Performance Experience through MIR,Gold,yuta.kusaka@music.yamaha.com,,,https://drive.google.com/file/d/1uaPyxnHHsF2DCC65q238-DXXCHQd0HXW/preview,,Yamaha,yamaha-sponsor,https://slack.com/app_redirect?channel=C04CGD56LQ5,https://www.yamaha.com/,Booth + communication channel
+moises,Moises,Platinum,igor@moises.ai,,,https://www.youtube.com/embed/Elv6p9_MRWg?si=V5-5KLxgu7E_yJVw,https://www.youtube.com/embed/JYTK4o5H9FE?si=1PBYvAQiZSaefM9X,Moises,,,https://developer.moises.ai,Booth + communication channel
+yamaha,Yamaha,Gold,yuta.kusaka@music.yamaha.com,,,,,Yamaha,,,https://www.yamaha.com/en/,Booth + communication channel
+algoriddim,Algoriddim,Gold,sponsor_email,,,,,Algoriddm,,,,Booth + communication channel
+musixmatch,Musixmatch,Gold,francesca.galli@musixmatch.com, [Musixmatch Blog](https://medium.com/musixmatch-blog/tagged/ai),,https://www.youtube.com/embed/CToVgoH2YhU?si=diu0UwWq4cLVe0ez,,Musixmatch,,,https://www.musixmatch.com/it,Booth + communication channel
+deezer,Deezer,Gold,sponsor_email,,https://hal.science/hal-03669865/document,,,Deezer,,,https://research.deezer.com,Booth + communication channel
+adobe,Adobe,Gold,sponsor_email,,,https://www.youtube.com/embed/c1lzncIhoaU?si=aW7dCckZPwclLzfF,,Adobe,,,https://research.adobe.com/,Booth + communication channel
+umusic,UMUSIC,Gold,sponsor_email,,,,,UMUSIC,,,,Booth + communication channel
+google,Google,Gold,chrisdonahue@google.com,<ul><b>Careers</b> <li><a href="#">https://research.google/careers/</a></li><li><a href="#">https://www.deepmind.com/careers</a></li></ul>,,,,Google,,,https://research.google,Booth + communication channel
+acrcloudgmbh,"ACR Cloud GMBH",Silver,,,,,,ACR Cloud GMBH,,,https://www.acrcloud.com,Booth
+steinberg, Steinberg,Silver,,,,,,Steinberg,,,https://www.steinberg.net,Booth
+siriusxm,SiriusXM,Silver,,,,,,SiriusXM,,,,Booth
