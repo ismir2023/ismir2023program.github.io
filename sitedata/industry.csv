@@ -1,12 +1,12 @@
-uid,title,session,registered_emails,abstract,pdf,video,video2,company,channel_name,channel_url,external_web_link,type
-moises,Moises,Platinum,igor@moises.ai,,,https://www.youtube.com/embed/Elv6p9_MRWg?si=V5-5KLxgu7E_yJVw,https://www.youtube.com/embed/JYTK4o5H9FE?si=1PBYvAQiZSaefM9X,Moises,,,https://developer.moises.ai,Booth + communication channel
-yamaha,Yamaha,Gold,yuta.kusaka@music.yamaha.com,,yamaha.pdf,https://drive.google.com/file/d/1c-epNT0Yo3oIsMYYVKSXLkJ23ooNAo0J/preview,,Yamaha,,,https://www.yamaha.com/en/,Booth + communication channel
-algoriddim,Algoriddim,Gold,sponsor_email,,,,,Algoriddm,,,,Booth + communication channel
-musixmatch,Musixmatch,Gold,francesca.galli@musixmatch.com, [Musixmatch Blog](https://medium.com/musixmatch-blog/tagged/ai),,https://www.youtube.com/embed/CToVgoH2YhU?si=diu0UwWq4cLVe0ez,,Musixmatch,,,https://www.musixmatch.com/it,Booth + communication channel
-deezer,Deezer,Gold,sponsor_email,,deezer.pdf,,,Deezer,,,https://research.deezer.com,Booth + communication channel
-adobe,Adobe,Gold,sponsor_email,,,https://www.youtube.com/embed/c1lzncIhoaU?si=aW7dCckZPwclLzfF,,Adobe,,,https://research.adobe.com/,Booth + communication channel
-umusic,UMUSIC,Gold,sponsor_email,,,,,UMUSIC,,,,Booth + communication channel
-google,Google,Gold,chrisdonahue@google.com,<ul><b>Careers</b> <li><a href="#">https://research.google/careers/</a></li><li><a href="#">https://www.deepmind.com/careers</a></li></ul>,,,,Google,,,https://research.google,Booth + communication channel
-acrcloudgmbh,"ACR Cloud GMBH",Silver,,,,,,ACR Cloud GMBH,,,https://www.acrcloud.com,Booth
-steinberg, Steinberg,Silver,,,,,,Steinberg,,,https://www.steinberg.net,Booth
-siriusxm,SiriusXM,Silver,,,,,,SiriusXM,,,,Booth
+,Unnamed: 0.3,Unnamed: 0.2,Unnamed: 0.1,Unnamed: 0,uid,title,session,registered_emails,abstract,pdf,video,video2,company,channel_name,channel_url,external_web_link,type
+0,0,0,0,0,moises,Moises,Platinum,igor@moises.ai,,,https://www.youtube.com/embed/Elv6p9_MRWg?si=V5-5KLxgu7E_yJVw,https://www.youtube.com/embed/JYTK4o5H9FE?si=1PBYvAQiZSaefM9X,Moises,moises-sponsor,https://slack.com/app_redirect?channel=C062V4KAPCM,https://developer.moises.ai,Booth + communication channel
+1,1,1,1,1,yamaha,Yamaha,Gold,yuta.kusaka@music.yamaha.com,,yamaha.pdf,https://drive.google.com/file/d/1c-epNT0Yo3oIsMYYVKSXLkJ23ooNAo0J/preview,,Yamaha,yamaha-sponsor,https://slack.com/app_redirect?channel=C062XUWKHD1,https://www.yamaha.com/en/,Booth + communication channel
+2,2,2,2,2,algoriddim,Algoriddim,Gold,sponsor_email,,,,,Algoriddm,algoriddim-sponsor,https://slack.com/app_redirect?channel=C062RCSSV8W,,Booth + communication channel
+3,3,3,3,3,musixmatch,Musixmatch,Gold,francesca.galli@musixmatch.com, [Musixmatch Blog](https://medium.com/musixmatch-blog/tagged/ai),,https://www.youtube.com/embed/CToVgoH2YhU?si=diu0UwWq4cLVe0ez,,Musixmatch,musixmatch-sponsor,https://slack.com/app_redirect?channel=C062HFZ017Z,https://www.musixmatch.com/it,Booth + communication channel
+4,4,4,4,4,deezer,Deezer,Gold,sponsor_email,,deezer.pdf,,,Deezer,deezer-sponsor,https://slack.com/app_redirect?channel=C0630FGU0Q4,https://research.deezer.com,Booth + communication channel
+5,5,5,5,5,adobe,Adobe,Gold,sponsor_email,,,https://www.youtube.com/embed/c1lzncIhoaU?si=aW7dCckZPwclLzfF,,Adobe,adobe-sponsor,https://slack.com/app_redirect?channel=C0630FH45UL,https://research.adobe.com/,Booth + communication channel
+6,6,6,6,6,umusic,UMUSIC,Gold,sponsor_email,,,,,UMUSIC,umusic-sponsor,https://slack.com/app_redirect?channel=C062V4LDFFX,,Booth + communication channel
+7,7,7,7,7,google,Google,Gold,chrisdonahue@google.com,"<ul><b>Careers</b> <li><a href=""#"">https://research.google/careers/</a></li><li><a href=""#"">https://www.deepmind.com/careers</a></li></ul>",,,,Google,google-sponsor,https://slack.com/app_redirect?channel=C062RCTQFV4,https://research.google,Booth + communication channel
+8,8,8,8,8,acrcloudgmbh,ACR Cloud GMBH,Silver,,,,,,ACR Cloud GMBH,,,https://www.acrcloud.com,Booth
+9,9,9,9,9,steinberg, Steinberg,Silver,,,,,,Steinberg,,,https://www.steinberg.net,Booth
+10,10,10,10,10,siriusxm,SiriusXM,Silver,,,,,,SiriusXM,,,,Booth
