@@ -1,362 +1,372 @@
 [
   {
-    "calendarId": "open",
+    "calendarId": "registration",
     "category": "time",
-    "end": "2022-12-05T10:00:00+05:30",
-    "link": "day_1.html#open",
-    "location": "day_1.html#open",
-    "scrollKey": null,
-    "start": "2022-12-05T09:00:00+05:30",
-    "title": "Opening Session"
-  },
-  {
-    "calendarId": "pos",
-    "category": "time",
-    "end": "2022-12-05T12:30:00+05:30",
-    "link": "papers.html?session=1",
-    "location": "papers.html?session=1",
-    "scrollKey": null,
-    "start": "2022-12-05T10:00:00+05:30",
-    "title": "Posters Session 1"
-  },
-  {
-    "calendarId": "lunch",
-    "category": "time",
-    "end": "2022-12-05T13:30:00+05:30",
+    "end": "2023-11-06T09:00:00+01:00",
     "link": null,
     "location": null,
     "scrollKey": null,
-    "start": "2022-12-05T12:30:00+05:30",
-    "title": "Lunch"
+    "start": "2023-11-06T08:00:00+01:00",
+    "title": "Registration"
   },
   {
-    "calendarId": "pos",
+    "calendarId": "open",
     "category": "time",
-    "end": "2022-12-05T16:00:00+05:30",
-    "link": "papers.html?session=2",
-    "location": "papers.html?session=2",
+    "end": "2023-11-06T09:30:00+01:00",
+    "link": "day_2.html#open",
+    "location": "day_2.html#open",
     "scrollKey": null,
-    "start": "2022-12-05T13:30:00+05:30",
-    "title": "Posters Session 2"
-  },
-  {
-    "calendarId": "wimir",
-    "category": "time",
-    "end": "2022-12-05T17:30:00+05:30",
-    "link": "day_1.html#wimir",
-    "location": "day_1.html#wimir",
-    "scrollKey": null,
-    "start": "2022-12-05T16:00:00+05:30",
-    "title": "WiMIR Session"
-  },
-  {
-    "calendarId": "social",
-    "category": "time",
-    "end": "2022-12-05T19:00:00+05:30",
-    "link": "day_1.html#social",
-    "location": "day_1.html#social",
-    "scrollKey": null,
-    "start": "2022-12-05T17:30:00+05:30",
-    "title": "Dhaatu Puppet Show"
-  },
-  {
-    "calendarId": "social",
-    "category": "time",
-    "end": "2022-12-05T21:00:00+05:30",
-    "link": "day_1.html#social",
-    "location": "day_1.html#social",
-    "scrollKey": null,
-    "start": "2022-12-05T19:00:00+05:30",
-    "title": "Welcome Reception"
-  },
-  {
-    "calendarId": "vmeet",
-    "category": "time",
-    "end": "2022-12-05T23:15:00+05:30",
-    "link": "day_1.html#vmeet",
-    "location": "day_1.html#vmeet",
-    "scrollKey": null,
-    "start": "2022-12-05T22:00:00+05:30",
-    "title": "Virtual Special Session 1: Ethics/Code of Conduct for ISMIR"
+    "start": "2023-11-06T09:00:00+01:00",
+    "title": "Opening Session"
   },
   {
     "calendarId": "all",
     "category": "time",
-    "end": "2022-12-06T10:00:00+05:30",
+    "end": "2023-11-06T10:00:00+01:00",
     "link": "day_2.html#all",
     "location": "day_2.html#all",
     "scrollKey": null,
-    "start": "2022-12-06T09:00:00+05:30",
-    "title": "Keynote 1: Evolution of Performance and Aesthetics in Indian Art Music"
-  },
-  {
-    "calendarId": "tut",
-    "category": "time",
-    "end": "2022-12-04T13:00:00+05:30",
-    "link": "tutorials.html#T1",
-    "location": "tutorials.html#T1",
-    "scrollKey": null,
-    "start": "2022-12-04T09:00:00+05:30",
-    "title": "T1(M): An Introduction to Symbolic Music Processing in Python with Partitura"
-  },
-  {
-    "calendarId": "tut",
-    "category": "time",
-    "end": "2022-12-04T13:00:00+05:30",
-    "link": "tutorials.html#T2",
-    "location": "tutorials.html#T2",
-    "scrollKey": null,
-    "start": "2022-12-04T09:00:00+05:30",
-    "title": "T2(M): Computational Methods For Supporting Corpus-Based Research On Indian Art Music"
-  },
-  {
-    "calendarId": "tut",
-    "category": "time",
-    "end": "2022-12-04T13:00:00+05:30",
-    "link": "tutorials.html#T3",
-    "location": "tutorials.html#T3",
-    "scrollKey": null,
-    "start": "2022-12-04T09:00:00+05:30",
-    "title": "T3(M): Designing Controllable Synthesis System for Musical Signals"
-  },
-  {
-    "calendarId": "tut",
-    "category": "time",
-    "end": "2022-12-04T18:00:00+05:30",
-    "link": "tutorials.html#T4",
-    "location": "tutorials.html#T4",
-    "scrollKey": null,
-    "start": "2022-12-04T14:00:00+05:30",
-    "title": "T4(A): Few-Shot and Zero-Shot Learning for Musical Audio"
-  },
-  {
-    "calendarId": "tut",
-    "category": "time",
-    "end": "2022-12-04T18:00:00+05:30",
-    "link": "tutorials.html#T5",
-    "location": "tutorials.html#T5",
-    "scrollKey": null,
-    "start": "2022-12-04T14:00:00+05:30",
-    "title": "T5(A): Deep learning for automatic mixing"
-  },
-  {
-    "calendarId": "tut",
-    "category": "time",
-    "end": "2022-12-04T18:00:00+05:30",
-    "link": "tutorials.html#T6",
-    "location": "tutorials.html#T6",
-    "scrollKey": null,
-    "start": "2022-12-04T14:00:00+05:30",
-    "title": "T6(A): Trustworthy MIR: Creating MIR applications with values"
-  },
-  {
-    "calendarId": "sat",
-    "category": "time",
-    "end": "2022-12-09T18:00:00+05:30",
-    "link": "https://ismir2022.ismir.net/satellites/ime",
-    "location": "https://ismir2022.ismir.net/satellites/ime",
-    "scrollKey": null,
-    "start": "2022-12-09T09:00:00+05:30",
-    "title": "Indian Music Experience Satellite Workshop"
+    "start": "2023-11-06T09:30:00+01:00",
+    "title": "Keynote-1: Christine Abuer on \"Help! - Bridging the Gap Between Music Technology and Diverse Stakeholder Needs\""
   },
   {
     "calendarId": "pos",
     "category": "time",
-    "end": "2022-12-07T16:00:00+05:30",
-    "link": "papers.html?session=6",
-    "location": "papers.html?session=6",
+    "end": "2023-11-06T13:00:00+01:00",
+    "link": "papers.html?session=1",
+    "location": "papers.html?session=1",
     "scrollKey": null,
-    "start": "2022-12-07T13:30:00+05:30",
-    "title": "Posters Session 6"
-  },
-  {
-    "calendarId": "meet",
-    "category": "time",
-    "end": "2022-12-07T17:00:00+05:30",
-    "link": "day_3.html#meet",
-    "location": "day_3.html#meet",
-    "scrollKey": null,
-    "start": "2022-12-07T16:00:00+05:30",
-    "title": "Special Session 2: Enhancing music creativity with MIR"
-  },
-  {
-    "calendarId": "social",
-    "category": "time",
-    "end": "2022-12-07T21:00:00+05:30",
-    "link": "day_3.html#social",
-    "location": "day_3.html#social",
-    "scrollKey": null,
-    "start": "2022-12-07T17:00:00+05:30",
-    "title": "ISMIR2022 Banquet"
-  },
-  {
-    "calendarId": "vmeet",
-    "category": "time",
-    "end": "2022-12-07T23:15:00+05:30",
-    "link": "day_3.html#vmeet",
-    "location": "day_3.html#vmeet",
-    "scrollKey": null,
-    "start": "2022-12-07T22:00:00+05:30",
-    "title": "Virtual Special Session 3: TISMIR: the open journal of the ISMIR society"
-  },
-  {
-    "calendarId": "industry",
-    "category": "time",
-    "end": "2022-12-08T10:00:00+05:30",
-    "link": "industry.html",
-    "location": "industry.html",
-    "scrollKey": null,
-    "start": "2022-12-08T09:00:00+05:30",
-    "title": "Industry Session"
-  },
-  {
-    "calendarId": "pos",
-    "category": "time",
-    "end": "2022-12-08T12:30:00+05:30",
-    "link": "papers.html?session=7",
-    "location": "papers.html?session=7",
-    "scrollKey": null,
-    "start": "2022-12-08T10:00:00+05:30",
-    "title": "Poster Sessions 7"
+    "start": "2023-11-06T10:00:00+01:00",
+    "title": "Paper Session - 1"
   },
   {
     "calendarId": "lunch",
     "category": "time",
-    "end": "2022-12-08T13:30:00+05:30",
+    "end": "2023-11-06T14:30:00+01:00",
     "link": null,
     "location": null,
     "scrollKey": null,
-    "start": "2022-12-08T12:30:00+05:30",
+    "start": "2023-11-06T13:00:00+01:00",
     "title": "Lunch"
+  },
+  {
+    "calendarId": "pos",
+    "category": "time",
+    "end": "2023-11-06T17:00:00+01:00",
+    "link": "papers.html?session=2",
+    "location": "papers.html?session=2",
+    "scrollKey": null,
+    "start": "2023-11-06T14:30:00+01:00",
+    "title": "Paper Session - 2"
+  },
+  {
+    "calendarId": "meet",
+    "category": "time",
+    "end": "2023-11-06T19:30:00+01:00",
+    "link": "day_2.html#meet",
+    "location": "day_2.html#meet",
+    "scrollKey": null,
+    "start": "2023-11-06T17:30:00+01:00",
+    "title": "Special Session 1: Inclusion Session and Meetup"
+  },
+  {
+    "calendarId": "registration",
+    "category": "time",
+    "end": "2023-11-07T09:00:00+01:00",
+    "link": null,
+    "location": null,
+    "scrollKey": null,
+    "start": "2023-11-07T08:00:00+01:00",
+    "title": "Registration"
+  },
+  {
+    "calendarId": "all",
+    "category": "time",
+    "end": "2023-11-07T10:00:00+01:00",
+    "link": "day_3.html#all",
+    "location": "day_3.html#all",
+    "scrollKey": null,
+    "start": "2023-11-07T09:00:00+01:00",
+    "title": "Keynote-2: Rachel Bittner on \"Building & Launching MIR systems at industry scale\""
+  },
+  {
+    "calendarId": "pos",
+    "category": "time",
+    "end": "2023-11-07T13:00:00+01:00",
+    "link": "papers.html?session=3",
+    "location": "papers.html?session=3",
+    "scrollKey": null,
+    "start": "2023-11-07T10:00:00+01:00",
+    "title": "Paper Session - 3"
+  },
+  {
+    "calendarId": "registration",
+    "category": "time",
+    "end": "2023-11-05T09:00:00+01:00",
+    "link": null,
+    "location": null,
+    "scrollKey": null,
+    "start": "2023-11-05T08:00:00+01:00",
+    "title": "Registration"
+  },
+  {
+    "calendarId": "tut",
+    "category": "time",
+    "end": "2023-11-05T13:00:00+01:00",
+    "link": "tutorials.html#T1",
+    "location": "tutorials.html#T1",
+    "scrollKey": null,
+    "start": "2023-11-05T09:00:00+01:00",
+    "title": "T1(M): Analysing Physiological Data Collected During Music Listening: An Introduction"
+  },
+  {
+    "calendarId": "tut",
+    "category": "time",
+    "end": "2023-11-05T13:00:00+01:00",
+    "link": "tutorials.html#T2",
+    "location": "tutorials.html#T2",
+    "scrollKey": null,
+    "start": "2023-11-05T09:00:00+01:00",
+    "title": "T2(M): Introduction to Differentiable Audio Synthesizer Programming"
+  },
+  {
+    "calendarId": "tut",
+    "category": "time",
+    "end": "2023-11-05T13:00:00+01:00",
+    "link": "tutorials.html#T3",
+    "location": "tutorials.html#T3",
+    "scrollKey": null,
+    "start": "2023-11-05T09:00:00+01:00",
+    "title": "T3(M): Transformer-based Symbolic Music Generation: Fundamentals to Advanced Concepts, Stylistic Considerations, Conditioning Mechanisms and Large Language Models"
+  },
+  {
+    "calendarId": "lunch",
+    "category": "time",
+    "end": "2023-11-05T14:30:00+01:00",
+    "link": null,
+    "location": null,
+    "scrollKey": null,
+    "start": "2023-11-05T13:00:00+01:00",
+    "title": "Lunch"
+  },
+  {
+    "calendarId": "tut",
+    "category": "time",
+    "end": "2023-11-05T19:00:00+01:00",
+    "link": "tutorials.html#T4",
+    "location": "tutorials.html#T4",
+    "scrollKey": null,
+    "start": "2023-11-05T14:30:00+01:00",
+    "title": "T4(A): Computer-Assisted Music-Making Systems: Taxonomy, Review, and Coding"
+  },
+  {
+    "calendarId": "tut",
+    "category": "time",
+    "end": "2023-11-05T19:00:00+01:00",
+    "link": "tutorials.html#T5",
+    "location": "tutorials.html#T5",
+    "scrollKey": null,
+    "start": "2023-11-05T14:30:00+01:00",
+    "title": "T5(A): Learning with Music Signals: Technology Meets Education"
+  },
+  {
+    "calendarId": "tut",
+    "category": "time",
+    "end": "2023-11-05T19:00:00+01:00",
+    "link": "tutorials.html#T6",
+    "location": "tutorials.html#T6",
+    "scrollKey": null,
+    "start": "2023-11-05T14:30:00+01:00",
+    "title": "T6(A): Kymatio: Deep Learning meets Wavelet Theory for Music Signal Processing"
+  },
+  {
+    "calendarId": "social",
+    "category": "time",
+    "end": "2023-11-05T22:00:00+01:00",
+    "link": "day_1.html#social",
+    "location": "day_1.html#social",
+    "scrollKey": null,
+    "start": "2023-11-05T20:00:00+01:00",
+    "title": "Welcome Reception and Concert"
+  },
+  {
+    "calendarId": "meet",
+    "category": "time",
+    "end": "2023-11-08T19:30:00+01:00",
+    "link": "day_4.html#meet",
+    "location": "day_4.html#meet",
+    "scrollKey": null,
+    "start": "2023-11-08T18:30:00+01:00",
+    "title": "Special Session 3: Data Awareness"
+  },
+  {
+    "calendarId": "social",
+    "category": "time",
+    "end": "2023-11-08T22:30:00+01:00",
+    "link": "day_4.html#social",
+    "location": "day_4.html#social",
+    "scrollKey": null,
+    "start": "2023-11-08T20:30:00+01:00",
+    "title": "Banquet, Jazz Concert and Jam Session"
+  },
+  {
+    "calendarId": "registration",
+    "category": "time",
+    "end": "2023-11-09T09:00:00+01:00",
+    "link": null,
+    "location": null,
+    "scrollKey": null,
+    "start": "2023-11-09T08:00:00+01:00",
+    "title": "Registration"
+  },
+  {
+    "calendarId": "pos",
+    "category": "time",
+    "end": "2023-11-09T11:00:00+01:00",
+    "link": "papers.html?session=7",
+    "location": "papers.html?session=7",
+    "scrollKey": null,
+    "start": "2023-11-09T09:00:00+01:00",
+    "title": "Paper Session - 7"
   },
   {
     "calendarId": "awards",
     "category": "time",
-    "end": "2022-12-08T15:30:00+05:30",
-    "link": "day_4.html#awards",
-    "location": "day_4.html#awards",
+    "end": "2023-11-09T13:30:00+01:00",
+    "link": "day_5.html#awards",
+    "location": "day_5.html#awards",
     "scrollKey": null,
-    "start": "2022-12-08T13:30:00+05:30",
+    "start": "2023-11-09T11:30:00+01:00",
     "title": "Society meeting, awards and closing"
-  },
-  {
-    "calendarId": "lbd",
-    "category": "time",
-    "end": "2022-12-08T17:30:00+05:30",
-    "link": "lbds.html?session=Physical",
-    "location": "lbds.html?session=Physical",
-    "scrollKey": null,
-    "start": "2022-12-08T15:30:00+05:30",
-    "title": "Late Breaking Demo (Physical)"
-  },
-  {
-    "calendarId": "lbd",
-    "category": "time",
-    "end": "2022-12-08T19:00:00+05:30",
-    "link": "lbds.html?session=Virtual",
-    "location": "lbds.html?session=Virtual",
-    "scrollKey": null,
-    "start": "2022-12-08T17:30:00+05:30",
-    "title": "Late Breaking Demo (Virtual)"
-  },
-  {
-    "calendarId": "pos",
-    "category": "time",
-    "end": "2022-12-06T12:30:00+05:30",
-    "link": "papers.html?session=3",
-    "location": "papers.html?session=3",
-    "scrollKey": null,
-    "start": "2022-12-06T10:00:00+05:30",
-    "title": "Posters Session 3"
   },
   {
     "calendarId": "lunch",
     "category": "time",
-    "end": "2022-12-06T13:30:00+05:30",
+    "end": "2023-11-09T15:00:00+01:00",
     "link": null,
     "location": null,
     "scrollKey": null,
-    "start": "2022-12-06T12:30:00+05:30",
+    "start": "2023-11-09T13:30:00+01:00",
     "title": "Lunch"
   },
   {
-    "calendarId": "pos",
+    "calendarId": "lbd",
     "category": "time",
-    "end": "2022-12-06T16:00:00+05:30",
-    "link": "papers.html?session=4",
-    "location": "papers.html?session=4",
+    "end": "2023-11-09T17:00:00+01:00",
+    "link": "lbds.html?session=Late-breaking/Demo",
+    "location": "lbds.html?session=Late-breaking/Demo",
     "scrollKey": null,
-    "start": "2022-12-06T13:30:00+05:30",
-    "title": "Posters Session 4"
-  },
-  {
-    "calendarId": "meet",
-    "category": "time",
-    "end": "2022-12-06T17:00:00+05:30",
-    "link": "day_2.html#meet",
-    "location": "day_2.html#meet",
-    "scrollKey": null,
-    "start": "2022-12-06T16:00:00+05:30",
-    "title": "Special Session 1: Enhancing music listening with MIR"
-  },
-  {
-    "calendarId": "mus",
-    "category": "time",
-    "end": "2022-12-06T18:30:00+05:30",
-    "link": "music.html?session=Program",
-    "location": "music.html?session=Program",
-    "scrollKey": null,
-    "start": "2022-12-06T17:00:00+05:30",
-    "title": "ISMIR Music Program"
+    "start": "2023-11-09T15:00:00+01:00",
+    "title": "Late-breaking/Demo"
   },
   {
     "calendarId": "social",
     "category": "time",
-    "end": "2022-12-06T20:00:00+05:30",
-    "link": "day_2.html#social",
-    "location": "day_2.html#social",
+    "end": "2023-11-10T17:30:00+01:00",
+    "link": "day_6.html#social",
+    "location": "day_6.html#social",
     "scrollKey": null,
-    "start": "2022-12-06T18:30:00+05:30",
-    "title": "Music Concert"
-  },
-  {
-    "calendarId": "vmeet",
-    "category": "time",
-    "end": "2022-12-06T23:15:00+05:30",
-    "link": "day_2.html#vmeet",
-    "location": "day_2.html#vmeet",
-    "scrollKey": null,
-    "start": "2022-12-06T22:00:00+05:30",
-    "title": "Virtual Special Session 2: PhD in MIR - Challenges and Opportunities"
-  },
-  {
-    "calendarId": "all",
-    "category": "time",
-    "end": "2022-12-07T10:00:00+05:30",
-    "link": "day_3.html#all",
-    "location": "day_3.html#all",
-    "scrollKey": null,
-    "start": "2022-12-07T09:00:00+05:30",
-    "title": "Keynote 2: Adventures of AI: Deepfake and Bias in Audio Processing"
-  },
-  {
-    "calendarId": "pos",
-    "category": "time",
-    "end": "2022-12-07T12:30:00+05:30",
-    "link": "papers.html?session=5",
-    "location": "papers.html?session=5",
-    "scrollKey": null,
-    "start": "2022-12-07T10:00:00+05:30",
-    "title": "Posters Session 5"
+    "start": "2023-11-10T09:00:00+01:00",
+    "title": "Visit to the Violin Museum (Cremona)"
   },
   {
     "calendarId": "lunch",
     "category": "time",
-    "end": "2022-12-07T13:30:00+05:30",
+    "end": "2023-11-07T14:30:00+01:00",
     "link": null,
     "location": null,
     "scrollKey": null,
-    "start": "2022-12-07T12:30:00+05:30",
+    "start": "2023-11-07T13:00:00+01:00",
     "title": "Lunch"
+  },
+  {
+    "calendarId": "pos",
+    "category": "time",
+    "end": "2023-11-07T17:00:00+01:00",
+    "link": "papers.html?session=4",
+    "location": "papers.html?session=4",
+    "scrollKey": null,
+    "start": "2023-11-07T14:30:00+01:00",
+    "title": "Paper Session - 4"
+  },
+  {
+    "calendarId": "mus",
+    "category": "time",
+    "end": "2023-11-07T19:00:00+01:00",
+    "link": "music.html",
+    "location": "music.html",
+    "scrollKey": null,
+    "start": "2023-11-07T17:30:00+01:00",
+    "title": "Music Program"
+  },
+  {
+    "calendarId": "industry",
+    "category": "time",
+    "end": "2023-11-07T20:00:00+01:00",
+    "link": "industry.html?session=Platinum",
+    "location": "industry.html?session=Platinum",
+    "scrollKey": null,
+    "start": "2023-11-07T19:00:00+01:00",
+    "title": "Industry Meetup"
+  },
+  {
+    "calendarId": "registration",
+    "category": "time",
+    "end": "2023-11-08T09:00:00+01:00",
+    "link": null,
+    "location": null,
+    "scrollKey": null,
+    "start": "2023-11-08T08:00:00+01:00",
+    "title": "Registration"
+  },
+  {
+    "calendarId": "all",
+    "category": "time",
+    "end": "2023-11-08T10:00:00+01:00",
+    "link": "day_4.html#all",
+    "location": "day_4.html#all",
+    "scrollKey": null,
+    "start": "2023-11-08T09:00:00+01:00",
+    "title": "Keynote - 3: Joey Stuckey on \"Seeing the light through music, a blind man\u2019s journey of discovery through audio and how to navigate making music that speaks to the world in the age of the Screen Driven universe.\""
+  },
+  {
+    "calendarId": "pos",
+    "category": "time",
+    "end": "2023-11-08T13:00:00+01:00",
+    "link": "papers.html?session=5",
+    "location": "papers.html?session=5",
+    "scrollKey": null,
+    "start": "2023-11-08T10:00:00+01:00",
+    "title": "Paper Session - 5"
+  },
+  {
+    "calendarId": "lunch",
+    "category": "time",
+    "end": "2023-11-08T14:30:00+01:00",
+    "link": null,
+    "location": null,
+    "scrollKey": null,
+    "start": "2023-11-08T13:00:00+01:00",
+    "title": "Lunch"
+  },
+  {
+    "calendarId": "pos",
+    "category": "time",
+    "end": "2023-11-08T17:00:00+01:00",
+    "link": "papers.html?session=6",
+    "location": "papers.html?session=6",
+    "scrollKey": null,
+    "start": "2023-11-08T14:30:00+01:00",
+    "title": "Paper Session - 6"
+  },
+  {
+    "calendarId": "meet",
+    "category": "time",
+    "end": "2023-11-08T18:30:00+01:00",
+    "link": "day_4.html#meet",
+    "location": "day_4.html#meet",
+    "scrollKey": null,
+    "start": "2023-11-08T17:30:00+01:00",
+    "title": "Special Session 2: Panel Session"
   }
 ]
