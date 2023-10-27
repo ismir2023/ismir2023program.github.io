@@ -10,7 +10,7 @@ class Industry:
     """
     def __init__(self, industryCsvFile, registrationCsvFile, useDummyValues):
         print("Initialising lbds")
-        self.industryCsvFile = indusindtryCsvFile
+        self.industryCsvFile = industryCsvFile
         self.useDummyValues = useDummyValues
         self.registrationCsvFile = registrationCsvFile
 
